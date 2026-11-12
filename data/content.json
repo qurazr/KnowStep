@@ -1,0 +1,66 @@
+{
+  "levels": [
+    {
+      "id": "a1",
+      "title": "A1 — Beginner",
+      "topics": [
+        {
+          "id": "present-simple",
+          "title": "Present Simple",
+          "theory": "Present Simple используется для регулярных действий, привычек и фактов.\n\nУтверждение: I/you/we/they + глагол. He/she/it + глагол + s.\nПример: I work. She works.\n\nОтрицание: do/does + not + глагол.\nПример: I don't work. She doesn't work.\n\nВопрос: Do/Does + подлежащее + глагол?\nПример: Do you work? Does she work?",
+          "exercises": [
+            { "type": "choice", "question": "She ___ to school every day.", "options": ["go", "goes", "going"], "answer": "goes" },
+            { "type": "choice", "question": "They ___ coffee in the morning.", "options": ["drinks", "drink", "drinking"], "answer": "drink" },
+            { "type": "choice", "question": "___ he play football?", "options": ["Do", "Does", "Is"], "answer": "Does" },
+            { "type": "input", "question": "I ___ (not / like) cold weather.", "answer": "don't like" },
+            { "type": "input", "question": "My sister ___ (watch) TV in the evening.", "answer": "watches" }
+          ]
+        },
+        {
+          "id": "articles",
+          "title": "Артикли a / an / the",
+          "theory": "A/an — неопределённый артикль, используется с исчисляемыми существительными в единственном числе, когда речь о чём-то одном из многих.\n\nA — перед согласным звуком: a book, a car.\nAn — перед гласным звуком: an apple, an hour.\n\nThe — определённый артикль, когда предмет уже известен или единственный в своём роде: the sun, the book I told you about.",
+          "exercises": [
+            { "type": "choice", "question": "I saw ___ elephant at the zoo.", "options": ["a", "an", "the"], "answer": "an" },
+            { "type": "choice", "question": "___ sun rises in the east.", "options": ["A", "An", "The"], "answer": "The" },
+            { "type": "input", "question": "She bought ___ new phone. (a / an)", "answer": "a" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a2",
+      "title": "A2 — Elementary",
+      "topics": [
+        {
+          "id": "past-simple",
+          "title": "Past Simple",
+          "theory": "Past Simple используется для завершённых действий в прошлом с указанием времени.\n\nПравильные глаголы: глагол + ed. Пример: work → worked.\nНеправильные глаголы — отдельные формы: go → went, see → saw, have → had.\n\nОтрицание: did + not + глагол (в начальной форме).\nВопрос: Did + подлежащее + глагол?",
+          "exercises": [
+            { "type": "choice", "question": "I ___ to the cinema yesterday.", "options": ["go", "went", "gone"], "answer": "went" },
+            { "type": "choice", "question": "She ___ her homework last night.", "options": ["do", "did", "done"], "answer": "did" },
+            { "type": "input", "question": "We ___ (not / see) him at the party.", "answer": "didn't see" },
+            { "type": "input", "question": "They ___ (buy) a new car last month.", "answer": "bought" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b1",
+      "title": "B1 — Intermediate",
+      "topics": [
+        {
+          "id": "present-perfect",
+          "title": "Present Perfect",
+          "theory": "Present Perfect (have/has + past participle) связывает прошлое с настоящим: результат важен сейчас, или опыт до настоящего момента.\n\nПример: I have lost my keys (и сейчас не могу войти).\nShe has been to Paris (опыт).\n\nМаркеры: already, yet, ever, never, just, since, for.",
+          "exercises": [
+            { "type": "choice", "question": "I ___ never been to Japan.", "options": ["have", "has", "had"], "answer": "have" },
+            { "type": "choice", "question": "She ___ just finished her work.", "options": ["have", "has", "is"], "answer": "has" },
+            { "type": "input", "question": "They ___ (live) here for five years.", "answer": "have lived" },
+            { "type": "input", "question": "I ___ (never / eat) sushi.", "answer": "have never eaten" }
+          ]
+        }
+      ]
+    }
+  ]
+}
