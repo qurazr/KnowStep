@@ -14,6 +14,51 @@ const progress = {
     catch { return {}; }
   },
   save(p) { localStorage.setItem('knowstep_progress', JSON.stringify(p)); },
+
+  // тема пройдена (все упражнения верно)
+  markDone(levelId, topicId) {
+    const p = this.load();
+    p[levelId] = p[levelId] || {};
+    p[levelId][topicId] = p[levelId][topicId] || {};
+    p[levelId][topicId].finished = true;
+    p[levelId][topicId].answers = p[levelId][topicId].answers || {};
+    this.save(p);
+  },
+  isDone(levelId, topicId) {
+    const p = this.load();
+    return !!(p[levelId] && p[levelId][topicId] && p[levelId][topicId].finished);
+  },
+  countDone(levelId, topics) {
+    return topics.filter(t => this.isDone(levelId, t.id)).length;
+  },
+
+  // ответы внутри урока
+  getAnswers(levelId, topicId) {
+    const p = this.load();
+    if (p[levelId] && p[levelId][topicId] && p[levelId][topicId].answers) {
+      return p[levelId][topicId].answers;
+    }
+    return {};
+  },
+  saveAnswer(levelId, topicId, index, value, correct) {
+    const p = this.load();
+    p[levelId] = p[levelId] || {};
+    p[levelId][topicId] = p[levelId][topicId] || { answers: {} };
+    p[levelId][topicId].answers = p[levelId][topicId].answers || {};
+    p[levelId][topicId].answers[index] = { value, correct };
+    this.save(p);
+  },
+
+  // сброс урока (для кнопки «Пройти заново»)
+  resetTopic(levelId, topicId) {
+    const p = this.load();
+    if (p[levelId] && p[levelId][topicId]) {
+      delete p[levelId][topicId];
+      this.save(p);
+    }
+  }
+};
+  save(p) { localStorage.setItem('knowstep_progress', JSON.stringify(p)); },
   markDone(levelId, topicId) {
     const p = this.load();
     p[levelId] = p[levelId] || {};
@@ -97,6 +142,8 @@ function renderTopic() {
   $title.textContent = topic.title;
   $main.innerHTML = '';
 
+  const saved = progress.getAnswers(level.id, topic.id);
+
   const theory = document.createElement('div');
   theory.className = 'theory';
   theory.textContent = topic.theory;
@@ -104,18 +151,132 @@ function renderTopic() {
 
   let answeredCorrect = 0;
   let answeredTotal = 0;
-  let finished = false;
 
-  const checkFinish = () => {
-    if (answeredTotal === topic.exercises.length && answeredCorrect === topic.exercises.length && !finished) {
-      finished = true;
-      progress.markDone(level.id, topic.id);
-      const msg = document.createElement('div');
-      msg.className = 'feedback ok';
-      msg.textContent = '✓ Тема пройдена!';
-      $main.appendChild(msg);
+  topic.exercises.forEach((ex, idx) => {
+    const wrap = document.createElement('div');
+    wrap.className = 'exercise';
+
+    const q = document.createElement('p');
+    q.textContent = `${idx + 1}. ${ex.question}`;
+    wrap.appendChild(q);
+
+    const fb = document.createElement('div');
+    fb.className = 'feedback';
+
+    const prev = saved[idx];
+
+    const finalizeAnswer = (value, correct) => {
+      progress.saveAnswer(level.id, topic.id, idx, value, correct);
+      if (correct) answeredCorrect++;
+      answeredTotal++;
+    };
+
+    if (ex.type === 'choice') {
+      const buttons = [];
+      ex.options.forEach(opt => {
+        const btn = document.createElement('button');
+        btn.className = 'option';
+        btn.textContent = opt;
+        btn.addEventListener('click', () => {
+          buttons.forEach(b => b.disabled = true);
+          const correct = opt === ex.answer;
+          if (correct) {
+            btn.classList.add('correct');
+            fb.classList.add('ok');
+            fb.textContent = 'Верно';
+          } else {
+            btn.classList.add('wrong');
+            buttons.forEach(b => {
+              if (b.textContent === ex.answer) b.classList.add('correct');
+            });
+            fb.classList.add('err');
+            fb.textContent = 'Правильный ответ: ' + ex.answer;
+          }
+          finalizeAnswer(opt, correct);
+        });
+        buttons.push(btn);
+        wrap.appendChild(btn);
+      });
+      wrap.appendChild(fb);
+
+      // восстановление
+      if (prev) {
+        buttons.forEach(b => {
+          b.disabled = true;
+          if (b.textContent === ex.answer) b.classList.add('correct');
+          if (b.textContent === prev.value && !prev.correct) b.classList.add('wrong');
+        });
+        if (prev.correct) { fb.classList.add('ok'); fb.textContent = 'Верно'; }
+        else { fb.classList.add('err'); fb.textContent = 'Правильный ответ: ' + ex.answer; }
+        answeredCorrect += prev.correct ? 1 : 0;
+        answeredTotal++;
+      }
+
+    } else if (ex.type === 'input') {
+      const input = document.createElement('input');
+      input.type = 'text';
+      input.placeholder = 'Введите ответ';
+      wrap.appendChild(input);
+
+      const btn = document.createElement('button');
+      btn.className = 'btn';
+      btn.textContent = 'Проверить';
+      wrap.appendChild(btn);
+      wrap.appendChild(fb);
+
+      btn.addEventListener('click', () => {
+        if (input.disabled) return;
+        input.disabled = true;
+        btn.disabled = true;
+        const val = input.value.trim();
+        const correct = val.toLowerCase() === String(ex.answer).toLowerCase();
+        if (correct) {
+          fb.classList.add('ok');
+          fb.textContent = 'Верно';
+        } else {
+          fb.classList.add('err');
+          fb.textContent = 'Правильный ответ: ' + ex.answer;
+        }
+        finalizeAnswer(val, correct);
+      });
+
+      // восстановление
+      if (prev) {
+        input.value = prev.value;
+        input.disabled = true;
+        btn.disabled = true;
+        if (prev.correct) { fb.classList.add('ok'); fb.textContent = 'Верно'; }
+        else { fb.classList.add('err'); fb.textContent = 'Правильный ответ: ' + ex.answer; }
+        answeredCorrect += prev.correct ? 1 : 0;
+        answeredTotal++;
+      }
     }
-  };
+
+    $main.appendChild(wrap);
+  });
+
+  // если всё уже пройдено — показать сообщение и кнопку сброса
+  if (answeredTotal === topic.exercises.length && answeredCorrect === topic.exercises.length) {
+    progress.markDone(level.id, topic.id);
+    const msg = document.createElement('div');
+    msg.className = 'feedback ok';
+    msg.textContent = '✓ Тема пройдена!';
+    $main.appendChild(msg);
+  }
+
+  // кнопка «Пройти заново»
+  const resetBtn = document.createElement('button');
+  resetBtn.className = 'btn';
+  resetBtn.style.background = 'var(--secondary-bg)';
+  resetBtn.style.color = 'var(--text)';
+  resetBtn.textContent = 'Пройти заново';
+  resetBtn.addEventListener('click', () => {
+    progress.resetTopic(level.id, topic.id);
+    renderTopic();
+  });
+  $main.appendChild(resetBtn);
+}
+
 
   topic.exercises.forEach((ex, idx) => {
     const wrap = document.createElement('div');
