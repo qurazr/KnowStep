@@ -56,7 +56,8 @@
       "answer": "is"
     }
         
-      ],
+      ]
+        },
       {
   "id": "to-be-negative",
   "title": "Урок 2. To be: am not / isn't / aren't",
@@ -70,8 +71,6 @@
     { "type": "choice", "question": "It ___ cold.", "options": ["am not", "isn't", "aren't"], "answer": "isn't" },
     { "type": "input", "question": "О себе: I ___ a doctor. (введите am not / isn't / aren't)", "answer": "am not" },
     { "type": "input", "question": "О друге: He ___ tired. (введите am not / isn't / aren't)", "answer": "isn't" }
-  ]
-}
   ]
     },
     {
