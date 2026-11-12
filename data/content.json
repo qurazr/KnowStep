@@ -5,11 +5,10 @@
       "title": "A1 — Beginner",
       "topics": [
         {
-         {
-  "id": "to-be-affirmative",
-  "title": "Урок 1. To be: am / is / are",
-  "theory": "В английском нельзя сказать «Я студент» без глагола-связки to be.\n\nI → am\nYou → are\nHe / She / It → is\n\nПримеры:\nI am a student.\nYou are ready.\nShe is a teacher.\nIt is cold.\n\nЛексика урока:\na student — студент\na teacher — учитель\nready — готов\ntired — уставший\nfrom Russia — из России",
-  "exercises": [
+          "id": "to-be-affirmative",
+          "title": "Урок 1. To be: am / is / are",
+          "theory": "В английском нельзя сказать «Я студент» без глагола-связки to be.\n\nI → am\nYou → are\nHe / She / It → is\n\nПримеры:\nI am a student.\nYou are ready.\nShe is a teacher.\nIt is cold.\n\nЛексика урока:\na student — студент\na teacher — учитель\nready — готов\ntired — уставший\nfrom Russia — из России",
+          "exercises": [
     {
       "type": "choice",
       "question": "I ___ a student.",
