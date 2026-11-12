@@ -1,4 +1,4 @@
-const tg = window.Telegram?.WebApp;
+рconst tg = window.Telegram?.WebApp;
 if (tg) { tg.ready(); tg.expand(); }
 
 const state = { content: null, view: 'home', levelIndex: null, topicIndex: null };
