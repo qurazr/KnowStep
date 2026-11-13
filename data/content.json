@@ -9,103 +9,42 @@
           "title": "Урок 1. To be: am / is / are",
           "theory": "В английском нельзя сказать «Я студент» без глагола-связки to be.\n\nI → am\nYou → are\nHe / She / It → is\n\nПримеры:\nI am a student.\nYou are ready.\nShe is a teacher.\nIt is cold.\n\nЛексика урока:\na student — студент\na teacher — учитель\nready — готов\ntired — уставший\nfrom Russia — из России",
           "exercises": [
-    {
-      "type": "choice",
-      "question": "I ___ a student.",
-      "options": ["am", "is", "are"],
-      "answer": "am"
-    },
-    {
-      "type": "choice",
-      "question": "You ___ ready.",
-      "options": ["am", "is", "are"],
-      "answer": "are"
-    },
-    {
-      "type": "choice",
-      "question": "He ___ tired.",
-      "options": ["am", "is", "are"],
-      "answer": "is"
-    },
-    {
-      "type": "choice",
-      "question": "She ___ a teacher.",
-      "options": ["am", "is", "are"],
-      "answer": "is"
-    },
-    {
-      "type": "choice",
-      "question": "I ___ from Russia.",
-      "options": ["am", "is", "are"],
-      "answer": "am"
-    },
-    {
-      "type": "choice",
-      "question": "It ___ cold.",
-      "options": ["am", "is", "are"],
-      "answer": "is"
-    },
-    {
-      "type": "input",
-      "question": "Скажите о себе: I ___ a student. (введите am / is / are)",
-      "answer": "am"
-    },
-    {
-      "type": "input",
-      "question": "О друге: He ___ tired. (введите am / is / are)",
-      "answer": "is"
-    }
-        
-      ]
+            { "type": "choice", "question": "I ___ a student.", "options": ["am", "is", "are"], "answer": "am" },
+            { "type": "choice", "question": "You ___ ready.", "options": ["am", "is", "are"], "answer": "are" },
+            { "type": "choice", "question": "He ___ tired.", "options": ["am", "is", "are"], "answer": "is" },
+            { "type": "choice", "question": "She ___ a teacher.", "options": ["am", "is", "are"], "answer": "is" },
+            { "type": "choice", "question": "I ___ from Russia.", "options": ["am", "is", "are"], "answer": "am" },
+            { "type": "choice", "question": "It ___ cold.", "options": ["am", "is", "are"], "answer": "is" },
+            { "type": "input", "question": "Скажите о себе: I ___ a student. (введите am / is / are)", "answer": "am" },
+            { "type": "input", "question": "О друге: He ___ tired. (введите am / is / are)", "answer": "is" }
+          ]
         },
-         {
-  "id": "to-be-negative",
-  "title": "Урок 2. To be: am not / isn't / aren't",
-  "theory": "Отрицание строится просто: подлежащее + to be + not.\n\nI → am not (сокращение: I'm not — формы «amn't» нет!)\nYou → are not (aren't)\nHe / She / It → is not (isn't)\n\nПримеры:\nI'm not a doctor.\nYou aren't busy.\nHe isn't a driver.\nShe isn't hungry.\nI'm not from China.\nIt isn't cold.\n\nЛексика урока:\na doctor — врач\na driver — водитель\nbusy — занятый\nhungry — голодный\nfrom China — из Китая\n\nВажно: I am not → I'm not (не «I amn't»).",
-  "exercises": [
-    { "type": "choice", "question": "I ___ a doctor.", "options": ["am not", "isn't", "aren't"], "answer": "am not" },
-    { "type": "choice", "question": "You ___ busy.", "options": ["am not", "isn't", "aren't"], "answer": "aren't" },
-    { "type": "choice", "question": "He ___ a driver.", "options": ["am not", "isn't", "aren't"], "answer": "isn't" },
-    { "type": "choice", "question": "She ___ hungry.", "options": ["am not", "isn't", "aren't"], "answer": "isn't" },
-    { "type": "choice", "question": "I ___ from China.", "options": ["am not", "isn't", "aren't"], "answer": "am not" },
-    { "type": "choice", "question": "It ___ cold.", "options": ["am not", "isn't", "aren't"], "answer": "isn't" },
-    { "type": "input", "question": "О себе: I ___ a doctor. (введите am not / isn't / aren't)", "answer": "am not" },
-    { "type": "input", "question": "О друге: He ___ tired. (введите am not / isn't / aren't)", "answer": "isn't" }
-  ]
+        {
+          "id": "to-be-negative",
+          "title": "Урок 2. To be: am not / isn't / aren't",
+          "theory": "Отрицание строится просто: подлежащее + to be + not.\n\nI → am not (сокращение: I'm not — формы «amn't» нет!)\nYou → are not (aren't)\nHe / She / It → is not (isn't)\n\nПримеры:\nI'm not a doctor.\nYou aren't busy.\nHe isn't a driver.\nShe isn't hungry.\nI'm not from China.\nIt isn't cold.\n\nЛексика урока:\na doctor — врач\na driver — водитель\nbusy — занятый\nhungry — голодный\nfrom China — из Китая\n\nВажно: I am not → I'm not (не «I amn't»).",
+          "exercises": [
+            { "type": "choice", "question": "I ___ a doctor.", "options": ["am not", "isn't", "aren't"], "answer": "am not" },
+            { "type": "choice", "question": "You ___ busy.", "options": ["am not", "isn't", "aren't"], "answer": "aren't" },
+            { "type": "choice", "question": "He ___ a driver.", "options": ["am not", "isn't", "aren't"], "answer": "isn't" },
+            { "type": "choice", "question": "She ___ hungry.", "options": ["am not", "isn't", "aren't"], "answer": "isn't" },
+            { "type": "choice", "question": "I ___ from China.", "options": ["am not", "isn't", "aren't"], "answer": "am not" },
+            { "type": "choice", "question": "It ___ cold.", "options": ["am not", "isn't", "aren't"], "answer": "isn't" },
+            { "type": "input", "question": "О себе: I ___ a doctor. (введите am not / isn't / aren't)", "answer": "am not" },
+            { "type": "input", "question": "О друге: He ___ tired. (введите am not / isn't / aren't)", "answer": "isn't" }
+          ]
+        }
+      ]
     },
     {
       "id": "a2",
       "title": "A2 — Elementary",
-      "topics": [
-        {
-          "id": "past-simple",
-          "title": "Past Simple",
-          "theory": "Past Simple используется для завершённых действий в прошлом с указанием времени.\n\nПравильные глаголы: глагол + ed. Пример: work → worked.\nНеправильные глаголы — отдельные формы: go → went, see → saw, have → had.\n\nОтрицание: did + not + глагол (в начальной форме).\nВопрос: Did + подлежащее + глагол?",
-          "exercises": [
-            { "type": "choice", "question": "I ___ to the cinema yesterday.", "options": ["go", "went", "gone"], "answer": "went" },
-            { "type": "choice", "question": "She ___ her homework last night.", "options": ["do", "did", "done"], "answer": "did" },
-            { "type": "input", "question": "We ___ (not / see) him at the party.", "answer": "didn't see" },
-            { "type": "input", "question": "They ___ (buy) a new car last month.", "answer": "bought" }
-          ]
-        }
-      ]
+      "topics": []
     },
     {
       "id": "b1",
       "title": "B1 — Intermediate",
-      "topics": [
-        {
-          "id": "present-perfect",
-          "title": "Present Perfect",
-          "theory": "Present Perfect (have/has + past participle) связывает прошлое с настоящим: результат важен сейчас, или опыт до настоящего момента.\n\nПример: I have lost my keys (и сейчас не могу войти).\nShe has been to Paris (опыт).\n\nМаркеры: already, yet, ever, never, just, since, for.",
-          "exercises": [
-            { "type": "choice", "question": "I ___ never been to Japan.", "options": ["have", "has", "had"], "answer": "have" },
-            { "type": "choice", "question": "She ___ just finished her work.", "options": ["have", "has", "is"], "answer": "has" },
-            { "type": "input", "question": "They ___ (live) here for five years.", "answer": "have lived" },
-            { "type": "input", "question": "I ___ (never / eat) sushi.", "answer": "have never eaten" }
-          ]
-        }
-      ]
+      "topics": []
     }
   ]
 }
