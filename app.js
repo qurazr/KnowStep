@@ -149,6 +149,13 @@ function renderTopic() {
       progress.saveAnswer(level.id, topic.id, idx, value, correct);
       if (correct) answeredCorrect++;
       answeredTotal++;
+      
+      // Проверяем, не пройден ли урок после каждого ответа
+      if (answeredTotal === topic.exercises.length && answeredCorrect === topic.exercises.length) {
+        progress.markDone(level.id, topic.id);
+        // Перерисовываем урок, чтобы показать сообщение
+        renderTopic(); 
+      }
     };
 
     if (ex.type === 'choice') {
@@ -233,6 +240,7 @@ function renderTopic() {
     $main.appendChild(wrap);
   });
 
+  // Проверка при загрузке урока (если всё уже было пройдено ранее)
   if (answeredTotal === topic.exercises.length && answeredCorrect === topic.exercises.length) {
     progress.markDone(level.id, topic.id);
     const msg = document.createElement('div');
