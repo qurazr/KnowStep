@@ -1,3 +1,4 @@
+const API_URL = "https://green-credit-e221.razesens.workers.dev/";
 const tg = window.Telegram?.WebApp;
 if (tg) { tg.ready(); tg.expand(); }
 
