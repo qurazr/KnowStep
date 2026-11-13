@@ -267,12 +267,34 @@ function renderTopic() {
 
 (async function init() {
   try {
+    // 1. Если открыто в Telegram, отправляем данные на проверку
+    if (tg && tg.initData) {
+      console.log("Отправляем данные на бэкенд...");
+      const response = await fetch(API_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ initData: tg.initData })
+      });
+      
+      const authResult = await response.json();
+      console.log("Ответ от Cloudflare:", authResult);
+      
+      if (authResult.status === "ok") {
+        console.log("Привет, " + authResult.user.first_name + "! Авторизация успешна.");
+        // Здесь в будущем мы будем загружать прогресс пользователя
+      }
+    } else {
+      console.log("Приложение открыто не в Telegram или данных для входа нет.");
+    }
+
+    // 2. Загружаем уроки и запускаем приложение
     const res = await fetch('data/content.json');
     if (!res.ok) throw new Error('HTTP error ' + res.status);
     state.content = await res.json();
     render();
+
   } catch (e) {
-    $main.innerHTML = '<p class="feedback err">Ошибка загрузки данных. Проверьте консоль.</p>';
+    $main.innerHTML = '<p class="feedback err">Ошибка загрузки данных.</p>';
     console.error('Ошибка загрузки:', e);
   }
 })();
