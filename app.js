@@ -173,7 +173,7 @@ function renderPaginatedTheory(topic) {
       <div class="theory-nav">
         <button id="prevBtn" ${currentPage === 0 ? 'disabled' : ''}>← Назад</button>
         <span>${currentPage + 1} / ${totalPages}</span>
-        <button id="nextBtn">Вперед →}</button>
+        <button id="nextBtn">Вперед →</button>
       </div>
       <div id="exercises-container" class="hidden"></div>
     `;
