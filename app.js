@@ -53,16 +53,27 @@ function speakText(text) {
   utterance.lang = 'en-US';
   utterance.rate = 0.9;
 
-  // 2. Выбираем голос
-  const maleVoice = voices.find(v => 
+    // 1. Пытаемся найти мужской голос (Windows)
+  let selectedVoice = voices.find(v => 
     v.name.includes('Google UK English Male') || 
     v.name.includes('Microsoft David') || 
     v.name.includes('Male')
   );
-  if (maleVoice) utterance.voice = maleVoice;
-  else {
-    const anyEnglish = voices.find(v => v.lang.startsWith('en'));
-    if (anyEnglish) utterance.voice = anyEnglish;
+
+  // 2. Если мужского нет (например, на Android), ищем любой английский голос Google
+  if (!selectedVoice) {
+    selectedVoice = voices.find(v => 
+      v.lang.startsWith('en') && v.name.includes('Google')
+    );
+  }
+
+  // 3. Если и такого нет, берем просто первый английский
+  if (!selectedVoice) {
+    selectedVoice = voices.find(v => v.lang.startsWith('en'));
+  }
+
+  if (selectedVoice) {
+    utterance.voice = selectedVoice;
   }
 
   // 3. ЗАПУСКАЕМ «ПУЛЬС» (лечит обрыв через 15 секунд)
