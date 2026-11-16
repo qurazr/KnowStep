@@ -313,3 +313,20 @@ input[type="text"]:focus {
   white-space: nowrap;
   padding: 0 4px;
 }
+
+.grammar-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0;
+  font-size: 15px;
+  display: block; /* Делает таблицу блочным элементом */
+  overflow-x: auto; /* Добавляет горизонтальную прокрутку, если не влезает */
+  white-space: nowrap; /* Запрещает перенос текста внутри ячеек (опционально) */
+}
+
+/* Стили для ячеек остаются прежними */
+.grammar-table th, .grammar-table td {
+  border: 1px solid var(--border-color);
+  padding: 10px;
+  text-align: left;
+}
