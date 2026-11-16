@@ -1,0 +1,52 @@
+{
+  "topics": [
+    {
+      "id": "a1-lesson-05",
+      "title": "Урок 5. Указательные слова: this / that / these / those",
+      "theory_pages": [
+        "<h2>5.1. Что делают указательные слова</h2><p>Они указывают на предмет и отвечают на вопрос <b>«какой? / который?»</b> — то есть помогают показать: <b>этот</b> предмет (рядом) или <b>тот</b> предмет (вдалеке), <b>один</b> или <b>много</b>.</p><p>В английском выбор зависит от <b>двух параметров</b>:</p><ol><li><b>Расстояние:</b> близко (в руке, рядом) или далеко (вон там).</li><li><b>Число:</b> один предмет или несколько.</li></ol><table class='grammar-table'><tr><th></th><th>Один предмет</th><th>Несколько предметов</th></tr><tr><td><b>Близко</b> (рядом)</td><td><b>this</b></td><td><b>these</b></td></tr><tr><td><b>Далеко</b> (вон там)</td><td><b>that</b></td><td><b>those</b></td></tr></table>",
+        "<h2>5.2. Формы и произношение</h2><table class='grammar-table'><tr><th>Слово</th><th>Перевод</th><th>Произношение</th><th>Число</th></tr><tr><td><b>this</b></td><td>этот / эта / это</td><td>/ðɪs/ — «зис»</td><td>один</td></tr><tr><td><b>that</b></td><td>тот / та / то</td><td>/ðæt/ — «зэт»</td><td>один</td></tr><tr><td><b>these</b></td><td>эти</td><td>/ðiːz/ — «зииз»</td><td>много</td></tr><tr><td><b>those</b></td><td>те</td><td>/ðoʊz/ — «зоуз»</td><td>много</td></tr></table><p><b>Нюанс:</b> <i>this / that</i> — единственное число, <i>these / those</i> — множественное. Не путайте <i>this</i> (один) и <i>these</i> (много) — они похожи по звучанию, но разные по смыслу.</p>",
+        "<h2>5.3. Согласование с to be</h2><p>Указательные слова диктуют форму глагола to be:</p><table class='grammar-table'><tr><th>Указательное</th><th>Глагол</th><th>Пример</th></tr><tr><td><b>this</b></td><td><b>is</b></td><td><b>This is</b> a book.</td></tr><tr><td><b>that</b></td><td><b>is</b></td><td><b>That is</b> a car.</td></tr><tr><td><b>these</b></td><td><b>are</b></td><td><b>These are</b> books.</td></tr><tr><td><b>those</b></td><td><b>are</b></td><td><b>Those are</b> cars.</td></tr></table><p><b>Главное правило:</b> this / that → is, these / those → are. Ошибка <i>these is</i> ❌ — одна из самых частых.</p>",
+        "<h2>5.4. This / that без существительного</h2><p>Если предмет уже понятен из контекста, существительное можно не повторять:</p><ul><li><b>This is</b> my book.</li><li><b>That is</b> his car.</li><li><b>These are</b> my friends.</li><li><b>Those are</b> her keys.</li></ul><h2>5.5. This / that с существительным</h2><p>Указательное слово может стоять <b>перед существительным</b> как определение:</p><ul><li><b>This book</b> is new.</li><li><b>That car</b> is old.</li><li><b>These books</b> are new.</li><li><b>Those cars</b> are old.</li></ul><p><b>Нюанс:</b> в этом случае is / are согласуется с существительным, а не с указательным словом: <i>This book is new</i> (book — один), <i>These books are new</i> (books — много).</p>",
+        "<h2>5.6. This / that в вопросах и кратких ответах</h2><ul><li><b>Is this</b> a book? — Yes, <b>it is</b>. / No, <b>it isn't</b>.</li><li><b>Is that</b> a cat? — Yes, <b>it is</b>.</li><li><b>Are these</b> your keys? — Yes, <b>they are</b>. / No, <b>they aren't</b>.</li><li><b>Are those</b> books? — No, <b>they aren't</b>.</li></ul><p><b>Нюанс ответа:</b> this / that → <b>it</b>, these / those → <b>they</b>. Не говорите <i>Yes, this is</i> в кратком ответе — правильно <i>Yes, it is</i>.</p><h2>5.7. This в знакомстве</h2><p><i>This is…</i> — стандартная фраза для представления людей:</p><ul><li><b>This is</b> my friend Ivan.</li><li><b>This is</b> my mother.</li></ul><p>Здесь this не про расстояние, а про «вот этот человек».</p>",
+        "<h2>5.8. Типичные ошибки</h2><ol><li><b>These is</b> ❌ → <b>These are</b> ✅</li><li><b>This are</b> ❌ → <b>This is</b> ✅</li><li><b>Ответ it на these:</b> Are these books? — Yes, it is ❌ → Yes, they are ✅</li><li><b>Путаница this / these:</b> This books are new ❌ → These books are new ✅</li><li><b>Путаница that / those:</b> Those car is old ❌ → That car is old ✅</li></ol>"
+      ],
+      "exercises": [
+        { "type": "choice", "question": "___ is a book. (рядом)", "options": ["This", "That", "These", "Those"], "answer": "This" },
+        { "type": "choice", "question": "___ is a car. (вон там)", "options": ["This", "That", "These", "Those"], "answer": "That" },
+        { "type": "choice", "question": "___ are books. (рядом)", "options": ["This", "That", "These", "Those"], "answer": "These" },
+        { "type": "choice", "question": "___ are cars. (вон там)", "options": ["This", "That", "These", "Those"], "answer": "Those" },
+        { "type": "choice", "question": "___ is a pen. (рядом)", "options": ["This", "That", "These", "Those"], "answer": "This" },
+        { "type": "choice", "question": "___ is a table. (вон там)", "options": ["This", "That", "These", "Those"], "answer": "That" },
+        { "type": "choice", "question": "___ are chairs. (рядом)", "options": ["This", "That", "These", "Those"], "answer": "These" },
+        { "type": "choice", "question": "___ are windows. (вон там)", "options": ["This", "That", "These", "Those"], "answer": "Those" },
+        { "type": "choice", "question": "This ___ a book.", "options": ["is", "are"], "answer": "is" },
+        { "type": "choice", "question": "These ___ books.", "options": ["is", "are"], "answer": "are" },
+        { "type": "choice", "question": "That ___ a car.", "options": ["is", "are"], "answer": "is" },
+        { "type": "choice", "question": "Those ___ cars.", "options": ["is", "are"], "answer": "are" },
+        { "type": "choice", "question": "This ___ my pen.", "options": ["is", "are"], "answer": "is" },
+        { "type": "choice", "question": "These ___ my pens.", "options": ["is", "are"], "answer": "are" },
+        { "type": "choice", "question": "___ book is new. (рядом, одна книга)", "options": ["This", "That", "These", "Those"], "answer": "This" },
+        { "type": "choice", "question": "___ books are new. (рядом, много книг)", "options": ["This", "That", "These", "Those"], "answer": "These" },
+        { "type": "choice", "question": "___ car is old. (вон там, одна машина)", "options": ["This", "That", "These", "Those"], "answer": "That" },
+        { "type": "choice", "question": "___ cars are old. (вон там, много машин)", "options": ["This", "That", "These", "Those"], "answer": "Those" },
+        { "type": "choice", "question": "Is this a book? — Yes, ___ .", "options": ["it is", "they are"], "answer": "it is" },
+        { "type": "choice", "question": "Are these your keys? — Yes, ___ .", "options": ["it is", "they are"], "answer": "they are" },
+        { "type": "choice", "question": "Is that a car? — No, ___ .", "options": ["it isn't", "they aren't"], "answer": "it isn't" },
+        { "type": "choice", "question": "Are those books? — No, ___ .", "options": ["it isn't", "they aren't"], "answer": "they aren't" },
+        { "type": "input", "question": "Вставьте: ___ is a book. (рядом) (введите This / That / These / Those)", "answer": "This" },
+        { "type": "input", "question": "Вставьте: ___ are cars. (вон там) (введите This / That / These / Those)", "answer": "Those" },
+        { "type": "input", "question": "Вставьте: These ___ books. (введите is / are)", "answer": "are" },
+        { "type": "input", "question": "Вставьте: That ___ a car. (введите is / are)", "answer": "is" },
+        { "type": "input", "question": "Исправьте ошибку: These is books.", "answer": "These are books" },
+        { "type": "input", "question": "Исправьте ошибку: This are my pen.", "answer": "This is my pen" },
+        { "type": "input", "question": "Исправьте ошибку: Those car is old.", "answer": "That car is old" },
+        { "type": "input", "question": "Переведите: Это книга. (рядом)", "answer": "This is a book" },
+        { "type": "input", "question": "Переведите: Та машина старая. (вон там)", "answer": "That car is old" },
+        { "type": "input", "question": "Переведите: Эти книги новые. (рядом)", "answer": "These books are new" },
+        { "type": "input", "question": "Переведите: Это моя ручка. (рядом)", "answer": "This is my pen" },
+        { "type": "input", "question": "Заполните пропуски (this / these): ___ is my phone. ___ are my keys.", "answer": "This, These" }
+      ]
+    }
+  ]
+}

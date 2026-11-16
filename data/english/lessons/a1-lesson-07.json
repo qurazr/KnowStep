@@ -1,0 +1,50 @@
+{
+  "topics": [
+    {
+      "id": "a1-lesson-07",
+      "title": "Урок 7. There is / There are: «есть, находится»",
+      "theory_pages": [
+        "<h2>7.1. Что означает there is / there are</h2><p>Конструкция <b>there is / there are</b> говорит о том, что <b>что-то существует</b> или <b>находится</b> в определённом месте. На русский чаще всего переводится как «есть», «находится», «имеется» — или вообще без этого слова:</p><ul><li><b>There is</b> a book on the table. = На столе (есть) книга.</li><li><b>There are</b> books on the table. = На столе (есть) книги.</li></ul><p><b>Важно:</b> <i>there</i> здесь <b>не</b> означает «там». Это формальное слово, которое вводит информацию о наличии предмета. Смысловое ударение падает на существительное после глагола.</p>",
+        "<h2>7.2. Выбор is или are</h2><p>Форма зависит <b>только от числа существительного</b>, которое идёт после глагола:</p><table class='grammar-table'><tr><th>Что</th><th>Форма</th><th>Пример</th></tr><tr><td><b>Один предмет</b> (единственное число)</td><td><b>There is</b></td><td><b>There is</b> a cat in the room.</td></tr><tr><td><b>Много предметов</b> (множественное число)</td><td><b>There are</b></td><td><b>There are</b> cats in the room.</td></tr></table><p><b>Мнемоника:</b> there is → один (как is с he/she/it); there are → много (как are с they).</p><p><b>Нюанс:</b> если после конструкции идёт <b>неисчисляемое существительное</b> (water, milk, money, time), используем <b>there is</b>, потому что оно воспринимается как единственное число: <i>There is water in the bottle.</i> ✅ (не <i>There are water</i> ❌)</p>",
+        "<h2>7.3. Сокращение there's</h2><p><i>There is</i> в речи и неформальном письме сокращается до <b>there's</b>:</p><ul><li><b>There's</b> a book on the table.</li><li><b>There's</b> a cat in the room.</li></ul><p><b>Нюанс:</b> <i>there are</i> <b>не сокращается</b> до <i>there're</i> в стандартном письме (в речи иногда звучит, но на письме лучше не использовать).</p>",
+        "<h2>7.4. Отрицание: there isn't / there aren't</h2><p>Отрицание строится через <b>isn't / aren't + существительное</b>:</p><table class='grammar-table'><tr><th>Что</th><th>Отрицание</th><th>Пример</th></tr><tr><td>Один предмет</td><td><b>There isn't</b></td><td><b>There isn't</b> a cat in the room.</td></tr><tr><td>Много предметов</td><td><b>There aren't</b></td><td><b>There aren't</b> any chairs here.</td></tr></table><p><b>Нюанс:</b> в отрицании с множественным числом часто появляется <i>any</i> (<i>There aren't any chairs</i>), но any — тема отдельного урока. Пока можно говорить и без него: <i>There aren't chairs here</i> (грамматически допустимо, хотя any звучит естественнее).</p>",
+        "<h2>7.5. Вопрос: Is there…? / Are there…?</h2><p>Вопрос строится <b>перестановкой</b>: is / are выходит на первое место:</p><table class='grammar-table'><tr><th>Вопрос</th><th>Да</th><th>Нет</th></tr><tr><td><b>Is there</b> a bank near here?</td><td>Yes, there <b>is</b>.</td><td>No, there <b>isn't</b>.</td></tr><tr><td><b>Are there</b> any shops?</td><td>Yes, there <b>are</b>.</td><td>No, there <b>aren't</b>.</td></tr><tr><td><b>Is there</b> a cat in the room?</td><td>Yes, there <b>is</b>.</td><td>No, there <b>isn't</b>.</td></tr><tr><td><b>Are there</b> chairs in the kitchen?</td><td>Yes, there <b>are</b>.</td><td>No, there <b>aren't</b>.</td></tr></table><p><b>Важно:</b> в кратком ответе <i>there</i> <b>обязательно повторяется</b>: <i>Yes, there is</i> ✅ (не <i>Yes, it is</i> ❌).</p>",
+        "<h2>7.6. There is / are vs it is / they are</h2><p>Не путайте две конструкции:</p><ul><li><b>There is</b> a book on the table. = На столе есть книга. (сообщаем о наличии)</li><li><b>It is</b> a book. = Это книга. (называем предмет)</li><li><b>There are</b> books on the table. = На столе есть книги.</li><li><b>They are</b> books. = Это книги.</li></ul><p><b>Нюанс:</b> there is / are всегда вводит <b>новую информацию</b> о наличии; it is / they are — идентифицирует предмет.</p><h2>7.7. There is / are с предлогами места</h2><p>Конструкция часто используется с предлогами места (in, on, under, next to):</p><ul><li><b>There is</b> a cat <b>under</b> the table.</li><li><b>There are</b> books <b>on</b> the table.</li><li><b>There is</b> a bank <b>next to</b> the shop.</li></ul>",
+        "<h2>7.8. Типичные ошибки</h2><ol><li><b>There is books</b> ❌ → <b>There are books</b> ✅</li><li><b>There are a book</b> ❌ → <b>There is a book</b> ✅</li><li><b>Пропуск there в кратком ответе:</b> Is there a bank? — Yes, it is ❌ → <b>Yes, there is</b> ✅</li><li><b>Путаница there is и it is:</b> There is a book (наличие) vs It is a book (название) — разные смыслы.</li><li><b>There is water</b> ✅ (неисчисляемое — единственное число)</li><li><b>Лишнее there в утверждении с it:</b> It is there a book ❌ → <b>There is a book</b> ✅</li></ol>"
+      ],
+      "exercises": [
+        { "type": "choice", "question": "There ___ a book on the table.", "options": ["is", "are"], "answer": "is" },
+        { "type": "choice", "question": "There ___ two chairs in the room.", "options": ["is", "are"], "answer": "are" },
+        { "type": "choice", "question": "There ___ a window in the kitchen.", "options": ["is", "are"], "answer": "is" },
+        { "type": "choice", "question": "There ___ books on the shelf.", "options": ["is", "are"], "answer": "are" },
+        { "type": "choice", "question": "There ___ a cat under the table.", "options": ["is", "are"], "answer": "is" },
+        { "type": "choice", "question": "There ___ cars in the street.", "options": ["is", "are"], "answer": "are" },
+        { "type": "choice", "question": "There ___ water in the bottle.", "options": ["is", "are"], "answer": "is" },
+        { "type": "choice", "question": "There ___ a bank near here.", "options": ["is", "are"], "answer": "is" },
+        { "type": "choice", "question": "There ___ shops in this street.", "options": ["is", "are"], "answer": "are" },
+        { "type": "choice", "question": "There ___ a pen in my bag.", "options": ["is", "are"], "answer": "is" },
+        { "type": "choice", "question": "There ___ a cat in the room. (отрицание)", "options": ["isn't", "aren't"], "answer": "isn't" },
+        { "type": "choice", "question": "There ___ chairs in the kitchen. (отрицание)", "options": ["isn't", "aren't"], "answer": "aren't" },
+        { "type": "choice", "question": "There ___ a bank near here. (отрицание)", "options": ["isn't", "aren't"], "answer": "isn't" },
+        { "type": "choice", "question": "There ___ books on the table. (отрицание)", "options": ["isn't", "aren't"], "answer": "aren't" },
+        { "type": "choice", "question": "___ there a bank near here?", "options": ["Is", "Are"], "answer": "Is" },
+        { "type": "choice", "question": "___ there any shops?", "options": ["Is", "Are"], "answer": "Are" },
+        { "type": "choice", "question": "Is there a bank near here? — Yes, ___ .", "options": ["there is", "it is"], "answer": "there is" },
+        { "type": "choice", "question": "Are there any shops? — No, ___ .", "options": ["there isn't", "there aren't"], "answer": "there aren't" },
+        { "type": "input", "question": "Вставьте: There ___ a book on the table. (введите is / are)", "answer": "is" },
+        { "type": "input", "question": "Вставьте: There ___ two chairs in the room. (введите is / are)", "answer": "are" },
+        { "type": "input", "question": "Вставьте: There ___ a cat in the room. (отрицание) (введите isn't / aren't)", "answer": "isn't" },
+        { "type": "input", "question": "Вставьте: There ___ chairs in the kitchen. (отрицание) (введите isn't / aren't)", "answer": "aren't" },
+        { "type": "input", "question": "Составьте вопрос: there / is / a bank / near here → ___ ?", "answer": "Is there a bank near here" },
+        { "type": "input", "question": "Составьте вопрос: there / are / any shops → ___ ?", "answer": "Are there any shops" },
+        { "type": "input", "question": "Исправьте ошибку: There is books on the table.", "answer": "There are books on the table" },
+        { "type": "input", "question": "Исправьте ошибку: There are a book on the table.", "answer": "There is a book on the table" },
+        { "type": "input", "question": "Переведите: На столе есть книга.", "answer": "There is a book on the table" },
+        { "type": "input", "question": "Переведите: В комнате два стула.", "answer": "There are two chairs in the room" },
+        { "type": "input", "question": "Переведите: В бутылке есть вода.", "answer": "There is water in the bottle" },
+        { "type": "input", "question": "Переведите: Здесь есть банк?", "answer": "Is there a bank near here" },
+        { "type": "input", "question": "Заполните пропуски: ___ a bed and a table in my room. ___ two chairs.", "answer": "There is, There are" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "topics": [
+    {
+      "id": "a1-lesson-10",
+      "title": "Урок 10. Present Simple: вопросы (Do you…? Does he…?)",
+      "theory_pages": [
+        "<h2>10.1. Как строится вопрос в Present Simple</h2><p>Вопрос в Present Simple строится с помощью вспомогательного глагола <b>do / does</b>, который выходит <b>на первое место</b> перед подлежащим. Смысловой глагол стоит в <b>начальной форме</b> (без -s).</p><p><b>Схема:</b> Do / Does + подлежащее + глагол (V1) + остальное?</p><table class='grammar-table'><tr><th>Подлежащее</th><th>Вспомогательный глагол</th><th>Пример</th></tr><tr><td><b>I / You / We / They</b></td><td><b>Do</b></td><td><b>Do</b> you <b>work</b> here?</td></tr><tr><td><b>He / She / It</b></td><td><b>Does</b></td><td><b>Does</b> she <b>work</b> here?</td></tr></table><p><b>Главное правило:</b> <i>does</i> «забирает» -s у глагола. После <i>does</i> глагол <b>всегда без -s</b>:</p><ul><li><b>Does</b> she <b>work</b>? ✅ (не <i>does she works</i> ❌)</li><li><b>Does</b> he <b>play</b>? ✅ (не <i>does he plays</i> ❌)</li></ul>",
+        "<h2>10.2. Краткие ответы</h2><p>На вопрос с do / does нельзя ответить просто Yes или No — нужен краткий ответ с местоимением и вспомогательным глаголом:</p><table class='grammar-table'><tr><th>Вопрос</th><th>Утвердительный ответ</th><th>Отрицательный ответ</th></tr><tr><td><b>Do</b> you work here?</td><td>Yes, I <b>do</b>.</td><td>No, I <b>don't</b>.</td></tr><tr><td><b>Do</b> they live here?</td><td>Yes, they <b>do</b>.</td><td>No, they <b>don't</b>.</td></tr><tr><td><b>Does</b> he work here?</td><td>Yes, he <b>does</b>.</td><td>No, he <b>doesn't</b>.</td></tr><tr><td><b>Does</b> she work here?</td><td>Yes, she <b>does</b>.</td><td>No, she <b>doesn't</b>.</td></tr><tr><td><b>Does</b> it rain a lot?</td><td>Yes, it <b>does</b>.</td><td>No, it <b>doesn't</b>.</td></tr></table><p><b>Важно:</b> в кратком ответе <b>не повторяется</b> смысловой глагол: <i>Yes, I do</i> ✅ (не <i>Yes, I do work</i> ❌).</p>",
+        "<h2>10.3. Вопросы с have</h2><p>Глагол <i>have</i> в Present Simple образует вопрос по общему правилу:</p><ul><li><b>Do</b> you <b>have</b> a car? — Yes, I <b>do</b>. / No, I <b>don't</b>.</li><li><b>Does</b> he <b>have</b> a car? — Yes, he <b>does</b>. / No, he <b>doesn't</b>.</li></ul><p><b>Нюанс:</b> <i>have got</i> (урок 6) образует вопрос иначе: <i>Have you got a car?</i> Но обычный <i>have</i> → <i>Do you have…?</i></p><h2>10.4. Вопросы с do как смысловым глаголом</h2><p>Если <i>do</i> — смысловой глагол («делать»), он тоже подчиняется правилу:</p><ul><li><b>Do</b> you <b>do</b> your homework in the morning?</li><li><b>Does</b> she <b>do</b> her homework in the morning?</li></ul><p>Здесь do встречается дважды: вспомогательный Do / Does + смысловой do. Это нормально.</p>",
+        "<h2>10.5. Вопросы с вопросительными словами (базово)</h2><p>Вопросительное слово ставится <b>перед</b> do / does:</p><ul><li><b>Where</b> do you <b>live</b>? — I live in Moscow.</li><li><b>What</b> does she <b>study</b>? — She studies English.</li><li><b>When</b> do they <b>play</b> football? — They play football on Sunday.</li></ul><p>Подробно вопросительные слова — в уроке 37.</p>",
+        "<h2>10.6. Do / Does в отрицании и вопросе — симметрия</h2><p>Сравните:</p><table class='grammar-table'><tr><th>Тип</th><th>I / You / We / They</th><th>He / She / It</th></tr><tr><td>Утверждение</td><td>I <b>work</b>.</td><td>He <b>works</b>.</td></tr><tr><td>Отрицание</td><td>I <b>don't work</b>.</td><td>He <b>doesn't work</b>.</td></tr><tr><td>Вопрос</td><td><b>Do</b> I <b>work</b>?</td><td><b>Does</b> he <b>work</b>?</td></tr></table><p><b>Закономерность:</b> как только появляется do / does (в отрицании или вопросе), -s у глагола <b>исчезает</b>.</p>",
+        "<h2>10.7. Типичные ошибки</h2><ol><li><b>Лишнее -s после does:</b> Does she works? ❌ → <b>Does she work?</b> ✅</li><li><b>Does с I / you / we / they:</b> Does they live here? ❌ → <b>Do they live here?</b> ✅</li><li><b>Do с he / she / it:</b> Do he work here? ❌ → <b>Does he work here?</b> ✅</li><li><b>Пропуск вспомогательного глагола:</b> She work here? ❌ → <b>Does she work here?</b> ✅</li><li><b>Повтор смыслового глагола в кратком ответе:</b> Yes, I do work ❌ → <b>Yes, I do</b> ✅</li><li><b>Путаница с to be:</b> Is she work here? ❌ → <b>Does she work here?</b> ✅</li></ol>"
+      ],
+      "exercises": [
+        { "type": "choice", "question": "___ you work in a bank?", "options": ["Do", "Does"], "answer": "Do" },
+        { "type": "choice", "question": "___ she work in a school?", "options": ["Do", "Does"], "answer": "Does" },
+        { "type": "choice", "question": "___ he play football?", "options": ["Do", "Does"], "answer": "Does" },
+        { "type": "choice", "question": "___ they play tennis?", "options": ["Do", "Does"], "answer": "Do" },
+        { "type": "choice", "question": "___ we live in Moscow?", "options": ["Do", "Does"], "answer": "Do" },
+        { "type": "choice", "question": "___ your mother live in London?", "options": ["Do", "Does"], "answer": "Does" },
+        { "type": "choice", "question": "___ you read books?", "options": ["Do", "Does"], "answer": "Do" },
+        { "type": "choice", "question": "___ your brother read newspapers?", "options": ["Do", "Does"], "answer": "Does" },
+        { "type": "choice", "question": "Do you work here? — Yes, ___ .", "options": ["I do", "I does"], "answer": "I do" },
+        { "type": "choice", "question": "Does she work here? — Yes, ___ .", "options": ["she does", "she do"], "answer": "she does" },
+        { "type": "choice", "question": "Do they live here? — No, ___ .", "options": ["they don't", "they doesn't"], "answer": "they don't" },
+        { "type": "choice", "question": "Does he play football? — No, ___ .", "options": ["he don't", "he doesn't"], "answer": "he doesn't" },
+        { "type": "input", "question": "Вставьте: ___ you work in a bank? (введите Do / Does)", "answer": "Do" },
+        { "type": "input", "question": "Вставьте: ___ she work in a school? (введите Do / Does)", "answer": "Does" },
+        { "type": "input", "question": "Вставьте: ___ they live in Moscow? (введите Do / Does)", "answer": "Do" },
+        { "type": "input", "question": "Составьте вопрос: You work in a bank. → ___ ?", "answer": "Do you work in a bank" },
+        { "type": "input", "question": "Составьте вопрос: She works in a school. → ___ ?", "answer": "Does she work in a school" },
+        { "type": "input", "question": "Составьте вопрос: He plays football. → ___ ?", "answer": "Does he play football" },
+        { "type": "input", "question": "Ответьте: Do you work here? — Yes, ___ .", "answer": "I do" },
+        { "type": "input", "question": "Ответьте: Does she work here? — Yes, ___ .", "answer": "she does" },
+        { "type": "input", "question": "Ответьте: Do they live here? — No, ___ .", "answer": "they don't" },
+        { "type": "input", "question": "Ответьте: Does he play football? — No, ___ .", "answer": "he doesn't" },
+        { "type": "input", "question": "Исправьте ошибку: Does she works in a school?", "answer": "Does she work in a school" },
+        { "type": "input", "question": "Исправьте ошибку: Does they live here?", "answer": "Do they live here" },
+        { "type": "input", "question": "Исправьте ошибку: Do he work here?", "answer": "Does he work here" },
+        { "type": "input", "question": "Переведите: Ты работаешь в банке?", "answer": "Do you work in a bank" },
+        { "type": "input", "question": "Переведите: Она работает в школе?", "answer": "Does she work in a school" },
+        { "type": "input", "question": "Переведите: Он играет в футбол?", "answer": "Does he play football" },
+        { "type": "input", "question": "Переведите: Они живут в Москве?", "answer": "Do they live in Moscow" },
+        { "type": "input", "question": "Заполните пропуски: ___ you live in Moscow? — Yes, I ___ .", "answer": "Do, do" }
+      ]
+    }
+  ]
+}

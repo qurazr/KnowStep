@@ -3,6 +3,12 @@
     { "id": "a1-lesson-01", "title": "Урок 1. Глагол to be: утверждение", "file": "lessons/a1-lesson-01.json" },
     { "id": "a1-lesson-02", "title": "Урок 2. Глагол to be: отрицание", "file": "lessons/a1-lesson-02.json" },
     { "id": "a1-lesson-02", "title": "Урок 3. Глагол to be: вопросы и краткие ответы", "file": "lessons/a1-lesson-03.json" },
-    { "id": "a1-lesson-02", "title": "Урок 4. Притяжательные местоимения: my / your / his / her / its / our / their", "file": "lessons/a1-lesson-04.json" }
+    { "id": "a1-lesson-02", "title": "Урок 4. Притяжательные местоимения: my / your / his / her / its / our / their", "file": "lessons/a1-lesson-04.json" },
+    { "id": "a1-lesson-01", "title": "Урок 5. Указательные слова: this / that / these / those", "file": "lessons/a1-lesson-05.json" },
+    { "id": "a1-lesson-01", "title": "Урок 6. Have got / Has got: «у меня есть»", "file": "lessons/a1-lesson-06.json" },
+    { "id": "a1-lesson-01", "title": "Урок 7. There is / There are: «есть, находится»", "file": "lessons/a1-lesson-07.json" },
+    { "id": "a1-lesson-01", "title": "Урок 8. Present Simple: утверждение («я делаю это каждый день»)", "file": "lessons/a1-lesson-08.json" },
+    { "id": "a1-lesson-01", "title": "Урок 9. Present Simple: отрицание (don't / doesn't)", "file": "lessons/a1-lesson-09.json" },
+    { "id": "a1-lesson-01", "title": "Урок 10. Present Simple: вопросы (Do you…? Does he…?)", "file": "lessons/a1-lesson-10.json" }
   ]
 }

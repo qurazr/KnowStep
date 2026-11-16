@@ -1,0 +1,51 @@
+{
+  "topics": [
+    {
+      "id": "a1-lesson-09",
+      "title": "Урок 9. Present Simple: отрицание (don't / doesn't)",
+      "theory_pages": [
+        "<h2>9.1. Как строится отрицание в Present Simple</h2><p>Отрицательное предложение в Present Simple строится с помощью вспомогательного глагола <b>do / does + not</b>. Смысловой глагол при этом стоит в <b>начальной форме</b> (без -s).</p><p><b>Схема:</b> подлежащее + <b>don't / doesn't</b> + глагол (V1) + остальное.</p><table class='grammar-table'><tr><th>Подлежащее</th><th>Вспомогательный глагол</th><th>Пример</th></tr><tr><td><b>I / You / We / They</b></td><td><b>don't</b> (do not)</td><td>I <b>don't work</b> here.</td></tr><tr><td><b>He / She / It</b></td><td><b>doesn't</b> (does not)</td><td>She <b>doesn't work</b> here.</td></tr></table><p><b>Главное правило:</b> <i>doesn't</i> «забирает» -s у глагола. После <i>doesn't</i> глагол <b>всегда без -s</b>:</p><ul><li>She <b>doesn't work</b> ✅ (не <i>doesn't works</i> ❌)</li><li>He <b>doesn't play</b> ✅ (не <i>doesn't plays</i> ❌)</li></ul>",
+        "<h2>9.2. Полные и сокращённые формы</h2><table class='grammar-table'><tr><th>Полная форма</th><th>Сокращение</th><th>Пример</th></tr><tr><td>do not</td><td><b>don't</b></td><td>I <b>don't</b> work here.</td></tr><tr><td>does not</td><td><b>doesn't</b></td><td>She <b>doesn't</b> work here.</td></tr></table><p>В речи и неформальном письме используются почти исключительно сокращения. Полные формы — для официального письма и усиленного отрицания.</p>",
+        "<h2>9.3. Отрицание с have</h2><p>Глагол <i>have</i> в Present Simple ведёт себя по общему правилу:</p><ul><li>I <b>don't have</b> a car. (не <i>I haven't a car</i> в American English; в British English <i>I haven't got a car</i> — урок 6)</li><li>He <b>doesn't have</b> a car. (не <i>he doesn't has</i> ❌)</li></ul><p><b>Нюанс:</b> <i>have got</i> (урок 6) отрицается иначе: <i>I haven't got a car</i>. Но обычный <i>have</i> (иметь) в Present Simple → <i>don't / doesn't have</i>.</p><h2>9.4. Отрицание с do как смысловым глаголом</h2><p>Если <i>do</i> — смысловой глагол («делать»), он тоже подчиняется правилу:</p><ul><li>I <b>don't do</b> my homework in the morning.</li><li>She <b>doesn't do</b> her homework in the morning.</li></ul><p><b>Нюанс:</b> здесь <i>do</i> встречается дважды: вспомогательный <i>don't / doesn't</i> + смысловой <i>do</i>. Это нормально.</p>",
+        "<h2>9.5. Отрицание с go / watch / study</h2><p>Все особые правила добавления -s / -es / -ies (урок 8) в отрицании <b>исчезают</b>, потому что глагол стоит в начальной форме:</p><ul><li>He <b>doesn't go</b> (не <i>doesn't goes</i>)</li><li>She <b>doesn't watch</b> (не <i>doesn't watches</i>)</li><li>He <b>doesn't study</b> (не <i>doesn't studies</i>)</li></ul><h2>9.6. Don't / doesn't в кратких ответах</h2><p>В кратких ответах на вопросы с do / does (урок 10) используются те же формы:</p><ul><li>Do you work here? — No, I <b>don't</b>.</li><li>Does she work here? — No, she <b>doesn't</b>.</li></ul>",
+        "<h2>9.7. Типичные ошибки</h2><ol><li><b>Лишнее -s после doesn't:</b> She doesn't works ❌ → <b>She doesn't work</b> ✅</li><li><b>Doesn't с I / you / we / they:</b> They doesn't work ❌ → <b>They don't work</b> ✅</li><li><b>Don't с he / she / it:</b> He don't work ❌ → <b>He doesn't work</b> ✅</li><li><b>Пропуск вспомогательного глагола:</b> She not work ❌ → <b>She doesn't work</b> ✅</li><li><b>Doesn't have → doesn't has:</b> He doesn't has a car ❌ → <b>He doesn't have a car</b> ✅</li><li><b>Путаница с to be:</b> She isn't work ❌ → <b>She doesn't work</b> ✅</li></ol>"
+      ],
+      "exercises": [
+        { "type": "choice", "question": "I ___ work in a bank.", "options": ["don't", "doesn't"], "answer": "don't" },
+        { "type": "choice", "question": "She ___ work in a school.", "options": ["don't", "doesn't"], "answer": "doesn't" },
+        { "type": "choice", "question": "He ___ play football.", "options": ["don't", "doesn't"], "answer": "doesn't" },
+        { "type": "choice", "question": "They ___ play tennis.", "options": ["don't", "doesn't"], "answer": "don't" },
+        { "type": "choice", "question": "We ___ live in Moscow.", "options": ["don't", "doesn't"], "answer": "don't" },
+        { "type": "choice", "question": "My mother ___ live in London.", "options": ["don't", "doesn't"], "answer": "doesn't" },
+        { "type": "choice", "question": "You ___ read books.", "options": ["don't", "doesn't"], "answer": "don't" },
+        { "type": "choice", "question": "My brother ___ read newspapers.", "options": ["don't", "doesn't"], "answer": "doesn't" },
+        { "type": "choice", "question": "I ___ go to school.", "options": ["don't", "doesn't"], "answer": "don't" },
+        { "type": "choice", "question": "She ___ go to work.", "options": ["don't", "doesn't"], "answer": "doesn't" },
+        { "type": "choice", "question": "I ___ like coffee.", "options": ["don't", "doesn't"], "answer": "don't" },
+        { "type": "choice", "question": "He ___ like tea.", "options": ["don't", "doesn't"], "answer": "doesn't" },
+        { "type": "choice", "question": "They ___ live here.", "options": ["don't", "doesn't"], "answer": "don't" },
+        { "type": "choice", "question": "She ___ live here.", "options": ["don't", "doesn't"], "answer": "doesn't" },
+        { "type": "choice", "question": "We ___ work on Sunday.", "options": ["don't", "doesn't"], "answer": "don't" },
+        { "type": "choice", "question": "My father ___ work on Sunday.", "options": ["don't", "doesn't"], "answer": "doesn't" },
+        { "type": "choice", "question": "You ___ speak French.", "options": ["don't", "doesn't"], "answer": "don't" },
+        { "type": "choice", "question": "My sister ___ speak French.", "options": ["don't", "doesn't"], "answer": "doesn't" },
+        { "type": "input", "question": "Вставьте: I ___ work in a bank. (введите don't / doesn't)", "answer": "don't" },
+        { "type": "input", "question": "Вставьте: She ___ work in a school. (введите don't / doesn't)", "answer": "doesn't" },
+        { "type": "input", "question": "Вставьте: He ___ play football. (введите don't / doesn't)", "answer": "doesn't" },
+        { "type": "input", "question": "Вставьте: They ___ live in Moscow. (введите don't / doesn't)", "answer": "don't" },
+        { "type": "input", "question": "Вставьте: My mother ___ cook dinner. (введите don't / doesn't)", "answer": "doesn't" },
+        { "type": "input", "question": "Раскройте скобки: I ___ (not / work) in a bank.", "answer": "don't work" },
+        { "type": "input", "question": "Раскройте скобки: She ___ (not / work) in a school.", "answer": "doesn't work" },
+        { "type": "input", "question": "Раскройте скобки: He ___ (not / play) football.", "answer": "doesn't play" },
+        { "type": "input", "question": "Исправьте ошибку: She doesn't works in a school.", "answer": "She doesn't work in a school" },
+        { "type": "input", "question": "Исправьте ошибку: They doesn't work in a bank.", "answer": "They don't work in a bank" },
+        { "type": "input", "question": "Исправьте ошибку: He don't play football.", "answer": "He doesn't play football" },
+        { "type": "input", "question": "Переведите: Я не работаю в банке.", "answer": "I don't work in a bank" },
+        { "type": "input", "question": "Переведите: Она не работает в школе.", "answer": "She doesn't work in a school" },
+        { "type": "input", "question": "Переведите: Он не играет в футбол.", "answer": "He doesn't play football" },
+        { "type": "input", "question": "Переведите: Они не живут в Москве.", "answer": "They don't live in Moscow" },
+        { "type": "input", "question": "Заполните пропуски: I ___ (live) in Moscow. My mother ___ (not / work) in a bank.", "answer": "live, doesn't work" }
+      ]
+    }
+  ]
+}

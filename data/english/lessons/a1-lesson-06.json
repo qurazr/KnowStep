@@ -1,0 +1,49 @@
+{
+  "topics": [
+    {
+      "id": "a1-lesson-06",
+      "title": "Урок 6. Have got / Has got: «у меня есть»",
+      "theory_pages": [
+        "<h2>6.1. Что означает have got</h2><p><b>Have got</b> — это разговорная конструкция, которая означает <b>«иметь, обладать»</b>. В британском английском она используется чаще, чем просто <i>have</i>, когда мы говорим о том, что у нас <b>есть</b>:</p><ul><li>I <b>have got</b> a phone. = У меня есть телефон.</li><li>She <b>has got</b> a car. = У неё есть машина.</li></ul><p><b>Важно:</b> <i>have got</i> — это не <i>have</i> + <i>get</i> в значении «получить». Это единая конструкция настоящего времени со значением «иметь».</p>",
+        "<h2>6.2. Формы: have got и has got</h2><p>Выбор формы зависит <b>только от подлежащего</b>:</p><table class='grammar-table'><tr><th>Подлежащее</th><th>Форма</th><th>Пример</th></tr><tr><td><b>I</b></td><td><b>have got</b></td><td>I <b>have got</b> a phone.</td></tr><tr><td><b>You</b></td><td><b>have got</b></td><td>You <b>have got</b> a car.</td></tr><tr><td><b>We</b></td><td><b>have got</b></td><td>We <b>have got</b> a house.</td></tr><tr><td><b>They</b></td><td><b>have got</b></td><td>They <b>have got</b> a dog.</td></tr><tr><td><b>He</b></td><td><b>has got</b></td><td>He <b>has got</b> a bike.</td></tr><tr><td><b>She</b></td><td><b>has got</b></td><td>She <b>has got</b> a cat.</td></tr><tr><td><b>It</b></td><td><b>has got</b></td><td>It <b>has got</b> a long tail.</td></tr></table><p><b>Мнемоника:</b> he / she / it → <b>has got</b> (как is в to be); всё остальное → <b>have got</b> (как are).</p>",
+        "<h2>6.3. Сокращения</h2><p>В речи и неформальном письме конструкция почти всегда сокращается:</p><table class='grammar-table'><tr><th>Полная форма</th><th>Сокращение</th><th>Пример</th></tr><tr><td>I have got</td><td><b>I've got</b></td><td><b>I've got</b> a phone.</td></tr><tr><td>You have got</td><td><b>You've got</b></td><td><b>You've got</b> a car.</td></tr><tr><td>He has got</td><td><b>He's got</b></td><td><b>He's got</b> a bike.</td></tr><tr><td>She has got</td><td><b>She's got</b></td><td><b>She's got</b> a cat.</td></tr><tr><td>It has got</td><td><b>It's got</b></td><td><b>It's got</b> a long tail.</td></tr><tr><td>We have got</td><td><b>We've got</b></td><td><b>We've got</b> a house.</td></tr><tr><td>They have got</td><td><b>They've got</b></td><td><b>They've got</b> a dog.</td></tr></table><p><b>Главная ловушка:</b> <i>he's got</i> = <i>he has got</i> (не <i>he is got</i>). <i>She's got</i> = <i>she has got</i>. То есть <i>'s</i> здесь означает <b>has</b>, а не <b>is</b>.</p>",
+        "<h2>6.4. Отрицание: haven't got / hasn't got</h2><p>Отрицание строится через <b>haven't / hasn't + got</b>:</p><table class='grammar-table'><tr><th>Подлежащее</th><th>Отрицание</th><th>Пример</th></tr><tr><td>I / You / We / They</td><td><b>haven't got</b></td><td>I <b>haven't got</b> a car.</td></tr><tr><td>He / She / It</td><td><b>hasn't got</b></td><td>She <b>hasn't got</b> a dog.</td></tr></table><p><b>Нюанс:</b> в отрицании <i>got</i> <b>сохраняется</b>: <i>I haven't got a car</i> ✅ (не <i>I haven't a car</i> в рамках этой конструкции).</p><h2>6.5. Вопрос: Have you got…? / Has he got…?</h2><p>Вопрос строится <b>перестановкой</b>: have / has выходит на первое место, got остаётся после подлежащего:</p><table class='grammar-table'><tr><th>Вопрос</th><th>Да</th><th>Нет</th></tr><tr><td><b>Have</b> you <b>got</b> a phone?</td><td>Yes, I <b>have</b>.</td><td>No, I <b>haven't</b>.</td></tr><tr><td><b>Has</b> he <b>got</b> a bike?</td><td>Yes, he <b>has</b>.</td><td>No, he <b>hasn't</b>.</td></tr><tr><td><b>Has</b> she <b>got</b> a cat?</td><td>Yes, she <b>has</b>.</td><td>No, she <b>hasn't</b>.</td></tr><tr><td><b>Have</b> they <b>got</b> a dog?</td><td>Yes, they <b>have</b>.</td><td>No, they <b>haven't</b>.</td></tr></table><p><b>Важно:</b> в кратком ответе <i>got</i> <b>не повторяется</b>: <i>Yes, I have</i> ✅ (не <i>Yes, I have got</i> ❌).</p>",
+        "<h2>6.6. Have got vs have</h2><p>В American English чаще используют просто <i>have</i> (<i>I have a car</i>), в British English — <i>have got</i> (<i>I've got a car</i>). На уровне A1 можно использовать оба варианта, но <b>не смешивать</b> их в одном предложении:</p><ul><li>I <b>have got</b> a car. ✅</li><li>I <b>have</b> a car. ✅</li><li>I <b>have got</b> a car. ❌ (не <i>I have a car got</i>)</li></ul><p><b>Нюанс:</b> с едой, напитками, действиями (<i>have breakfast, have a shower, have a good time</i>) конструкция <i>have got</i> <b>не используется</b> — только <i>have</i>:</p><ul><li>I <b>have</b> breakfast at 8. ✅ (не <i>I've got breakfast</i> ❌)</li><li>She <b>has</b> a shower every morning. ✅</li></ul>",
+        "<h2>6.7. Типичные ошибки</h2><ol><li><b>He have got</b> ❌ → <b>He has got</b> ✅</li><li><b>She's got = she is got</b> ❌ → <b>she has got</b> ✅ ('s = has)</li><li><b>Yes, I have got</b> ❌ (в кратком ответе) → <b>Yes, I have</b> ✅</li><li><b>I haven't a car</b> ❌ (в рамках have got) → <b>I haven't got a car</b> ✅</li><li><b>Have got you a car?</b> ❌ → <b>Have you got a car?</b> ✅</li><li><b>I've got breakfast</b> ❌ → <b>I have breakfast</b> ✅</li></ol>"
+      ],
+      "exercises": [
+        { "type": "choice", "question": "I ___ a phone.", "options": ["have got", "has got"], "answer": "have got" },
+        { "type": "choice", "question": "She ___ a car.", "options": ["have got", "has got"], "answer": "has got" },
+        { "type": "choice", "question": "He ___ a dog.", "options": ["have got", "has got"], "answer": "has got" },
+        { "type": "choice", "question": "They ___ a house.", "options": ["have got", "has got"], "answer": "have got" },
+        { "type": "choice", "question": "We ___ a cat.", "options": ["have got", "has got"], "answer": "have got" },
+        { "type": "choice", "question": "You ___ a bike.", "options": ["have got", "has got"], "answer": "have got" },
+        { "type": "choice", "question": "My mother ___ a bag.", "options": ["have got", "has got"], "answer": "has got" },
+        { "type": "choice", "question": "My friends ___ books.", "options": ["have got", "has got"], "answer": "have got" },
+        { "type": "choice", "question": "I ___ a car. (отрицание)", "options": ["haven't got", "hasn't got"], "answer": "haven't got" },
+        { "type": "choice", "question": "She ___ a dog. (отрицание)", "options": ["haven't got", "hasn't got"], "answer": "hasn't got" },
+        { "type": "choice", "question": "He ___ a bike. (отрицание)", "options": ["haven't got", "hasn't got"], "answer": "hasn't got" },
+        { "type": "choice", "question": "They ___ a house. (отрицание)", "options": ["haven't got", "hasn't got"], "answer": "haven't got" },
+        { "type": "choice", "question": "___ you got a phone?", "options": ["Have", "Has"], "answer": "Have" },
+        { "type": "choice", "question": "___ she got a car?", "options": ["Have", "Has"], "answer": "Has" },
+        { "type": "choice", "question": "___ he got a dog?", "options": ["Have", "Has"], "answer": "Has" },
+        { "type": "choice", "question": "___ they got a house?", "options": ["Have", "Has"], "answer": "Have" },
+        { "type": "choice", "question": "Have you got a phone? — Yes, ___ .", "options": ["I have", "I have got"], "answer": "I have" },
+        { "type": "choice", "question": "Has she got a car? — No, ___ .", "options": ["she hasn't", "she hasn't got"], "answer": "she hasn't" },
+        { "type": "input", "question": "Вставьте: I ___ a phone. (введите have got / has got)", "answer": "have got" },
+        { "type": "input", "question": "Вставьте: She ___ a car. (введите have got / has got)", "answer": "has got" },
+        { "type": "input", "question": "Вставьте: I ___ a car. (отрицание) (введите haven't got / hasn't got)", "answer": "haven't got" },
+        { "type": "input", "question": "Вставьте: She ___ a dog. (отрицание) (введите haven't got / hasn't got)", "answer": "hasn't got" },
+        { "type": "input", "question": "Составьте вопрос: you / have got / a phone → ___ ?", "answer": "Have you got a phone" },
+        { "type": "input", "question": "Составьте вопрос: she / has got / a car → ___ ?", "answer": "Has she got a car" },
+        { "type": "input", "question": "Исправьте ошибку: He have got a dog.", "answer": "He has got a dog" },
+        { "type": "input", "question": "Исправьте ошибку: Yes, I have got.", "answer": "Yes, I have" },
+        { "type": "input", "question": "Переведите: У меня есть телефон.", "answer": "I have got a phone" },
+        { "type": "input", "question": "Переведите: У неё есть машина.", "answer": "She has got a car" },
+        { "type": "input", "question": "Переведите: У меня нет машины.", "answer": "I haven't got a car" },
+        { "type": "input", "question": "Переведите: У неё нет собаки.", "answer": "She hasn't got a dog" },
+        { "type": "input", "question": "Заполните пропуски: I ___ a phone. My sister ___ a car.", "answer": "have got, has got" }
+      ]
+    }
+  ]
+}

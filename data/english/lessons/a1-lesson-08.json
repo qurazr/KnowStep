@@ -1,0 +1,56 @@
+{
+  "topics": [
+    {
+      "id": "a1-lesson-08",
+      "title": "Урок 8. Present Simple: утверждение («я делаю это каждый день»)",
+      "theory_pages": [
+        "<h2>8.1. Когда используется Present Simple</h2><p><b>Present Simple</b> — это настоящее простое время. Оно используется для:</p><ol><li><b>Регулярных действий и привычек:</b> I <b>work</b> every day. (Я работаю каждый день.)</li><li><b>Фактов и постоянных состояний:</b> She <b>lives</b> in Moscow. (Она живёт в Москве.)</li><li><b>Расписаний и графиков:</b> The train <b>leaves</b> at 7. (Поезд отправляется в 7.)</li><li><b>Общих истин:</b> Water <b>boils</b> at 100°C. (Вода кипит при 100°C.)</li></ol><p><b>Слова-подсказки:</b> always, usually, often, sometimes, never, every day, every week, on Mondays.</p><p><b>Важно:</b> Present Simple <b>не</b> используется для действий, которые происходят прямо сейчас (для этого есть Present Continuous — урок 13).</p>",
+        "<h2>8.2. Форма глагола: основная и с -s</h2><p>В Present Simple форма глагола зависит от подлежащего:</p><table class='grammar-table'><tr><th>Подлежащее</th><th>Форма</th><th>Пример</th></tr><tr><td><b>I / You / We / They</b></td><td>глагол <b>без -s</b> (V1)</td><td>I <b>work</b>. They <b>play</b>.</td></tr><tr><td><b>He / She / It</b></td><td>глагол <b>+ -s</b> (V-s)</td><td>He <b>works</b>. She <b>plays</b>.</td></tr></table><p><b>Главное правило урока:</b> в 3-м лице единственного числа (he, she, it) к глаголу добавляется <b>-s</b>.</p><p><b>Сравните:</b></p><ul><li>I <b>work</b> in a bank.</li><li>He <b>works</b> in a bank. (не <i>he work</i> ❌)</li></ul>",
+        "<h2>8.3. Правила добавления -s / -es</h2><p>Не всегда достаточно просто добавить -s. Есть три правила:</p><p><b>Правило 1: обычно + -s</b></p><ul><li>work → work<b>s</b></li><li>play → play<b>s</b></li><li>read → read<b>s</b></li><li>live → live<b>s</b></li></ul><p><b>Правило 2: после -ch, -sh, -s, -x, -o → + -es</b></p><ul><li>watch → watch<b>es</b></li><li>wash → wash<b>es</b></li><li>miss → miss<b>es</b></li><li>fix → fix<b>es</b></li><li>go → go<b>es</b></li><li>do → do<b>es</b></li></ul><p><b>Правило 3: согласная + y → -y меняется на -ies</b></p><ul><li>study → stud<b>ies</b></li><li>carry → carr<b>ies</b></li><li>fly → fl<b>ies</b></li></ul><p><b>Но:</b> гласная + y → просто + -s:</p><ul><li>play → play<b>s</b></li><li>buy → buy<b>s</b></li><li>say → say<b>s</b></li></ul><p><b>Особый случай:</b> have → <b>has</b> (не haves).</p>",
+        "<h2>8.4. Произношение -s / -es</h2><p>Окончание -s / -es произносится по-разному:</p><table class='grammar-table'><tr><th>Звук</th><th>Когда</th><th>Пример</th></tr><tr><td>/s/</td><td>после глухих согласных (p, t, k, f)</td><td>work<b>s</b> /wɜːks/, like<b>s</b> /laɪks/</td></tr><tr><td>/z/</td><td>после звонких согласных и гласных</td><td>play<b>s</b> /pleɪz/, read<b>s</b> /riːdz/</td></tr><tr><td>/ɪz/</td><td>после -ch, -sh, -s, -x, -z, -ge</td><td>watch<b>es</b> /ˈwɒtʃɪz/, go<b>es</b> /ɡəʊz/</td></tr></table><p>На уровне A1 достаточно запомнить: -es после шипящих и -o произносится как /ɪz/ или /z/.</p>",
+        "<h2>8.5. Present Simple с to be</h2><p>Глагол <i>to be</i> — особый: в Present Simple он имеет формы <b>am / is / are</b> (мы уже прошли их в уроках 1–3). <b>Не</b> говорите <i>I be</i> или <i>he bes</i>.</p><ul><li>I <b>am</b> a student. (не <i>I be</i>)</li><li>He <b>is</b> a driver. (не <i>he bes</i>)</li></ul><h2>8.6. Present Simple с have got</h2><p>Конструкция <i>have got / has got</i> (урок 6) — это тоже настоящее время, но она используется для обладания. С обычными действиями (work, live, play) используется Present Simple:</p><ul><li>I <b>have got</b> a car. (обладание)</li><li>I <b>work</b> every day. (действие)</li></ul>",
+        "<h2>8.7. Типичные ошибки</h2><ol><li><b>Пропуск -s в 3-м лице:</b> He work ❌ → <b>He works</b> ✅</li><li><b>Лишнее -s с I / you / we / they:</b> They works ❌ → <b>They work</b> ✅</li><li><b>Неправильное -es:</b> He watchs ❌ → <b>He watches</b> ✅</li><li><b>Неправильная замена y:</b> She studys ❌ → <b>She studies</b> ✅</li><li><b>Have вместо has:</b> He have a car ❌ → <b>He has a car</b> ✅</li><li><b>Путаница с Present Continuous:</b> He is work every day ❌ → <b>He works every day</b> ✅</li></ol>"
+      ],
+      "exercises": [
+        { "type": "choice", "question": "I ___ (work) in a bank.", "options": ["work", "works"], "answer": "work" },
+        { "type": "choice", "question": "She ___ (work) in a school.", "options": ["work", "works"], "answer": "works" },
+        { "type": "choice", "question": "He ___ (play) football.", "options": ["play", "plays"], "answer": "plays" },
+        { "type": "choice", "question": "They ___ (play) tennis.", "options": ["play", "plays"], "answer": "play" },
+        { "type": "choice", "question": "We ___ (live) in Moscow.", "options": ["live", "lives"], "answer": "live" },
+        { "type": "choice", "question": "My mother ___ (live) in London.", "options": ["live", "lives"], "answer": "lives" },
+        { "type": "choice", "question": "You ___ (read) books.", "options": ["read", "reads"], "answer": "read" },
+        { "type": "choice", "question": "My brother ___ (read) newspapers.", "options": ["read", "reads"], "answer": "reads" },
+        { "type": "choice", "question": "I ___ (go) to school.", "options": ["go", "goes"], "answer": "go" },
+        { "type": "choice", "question": "She ___ (go) to work.", "options": ["go", "goes"], "answer": "goes" },
+        { "type": "choice", "question": "He ___ TV every evening.", "options": ["watch", "watches"], "answer": "watches" },
+        { "type": "choice", "question": "She ___ English.", "options": ["study", "studies"], "answer": "studies" },
+        { "type": "choice", "question": "It ___ a lot in autumn.", "options": ["rain", "rains"], "answer": "rains" },
+        { "type": "choice", "question": "My mother ___ dinner every day.", "options": ["cook", "cooks"], "answer": "cooks" },
+        { "type": "choice", "question": "He ___ his car on Sunday.", "options": ["wash", "washes"], "answer": "washes" },
+        { "type": "choice", "question": "She ___ to London every year.", "options": ["fly", "flies"], "answer": "flies" },
+        { "type": "input", "question": "Вставьте: I ___ (work) in a bank.", "answer": "work" },
+        { "type": "input", "question": "Вставьте: She ___ (work) in a school.", "answer": "works" },
+        { "type": "input", "question": "Вставьте: He ___ (play) football.", "answer": "plays" },
+        { "type": "input", "question": "Вставьте: They ___ (play) tennis.", "answer": "play" },
+        { "type": "input", "question": "Вставьте: My mother ___ (live) in London.", "answer": "lives" },
+        { "type": "input", "question": "Вставьте: My brother ___ (read) newspapers.", "answer": "reads" },
+        { "type": "input", "question": "Вставьте: She ___ (go) to work.", "answer": "goes" },
+        { "type": "input", "question": "Вставьте: He ___ TV every evening.", "answer": "watches" },
+        { "type": "input", "question": "Поставьте в 3-е лицо: work → ___", "answer": "works" },
+        { "type": "input", "question": "Поставьте в 3-е лицо: watch → ___", "answer": "watches" },
+        { "type": "input", "question": "Поставьте в 3-е лицо: study → ___", "answer": "studies" },
+        { "type": "input", "question": "Поставьте в 3-е лицо: go → ___", "answer": "goes" },
+        { "type": "input", "question": "Исправьте ошибку: He work in a bank.", "answer": "He works in a bank" },
+        { "type": "input", "question": "Исправьте ошибку: They works in a school.", "answer": "They work in a school" },
+        { "type": "input", "question": "Исправьте ошибку: She watchs TV.", "answer": "She watches TV" },
+        { "type": "input", "question": "Исправьте ошибку: He studys English.", "answer": "He studies English" },
+        { "type": "input", "question": "Переведите: Я работаю в банке.", "answer": "I work in a bank" },
+        { "type": "input", "question": "Переведите: Она работает в школе.", "answer": "She works in a school" },
+        { "type": "input", "question": "Переведите: Он играет в футбол.", "answer": "He plays football" },
+        { "type": "input", "question": "Переведите: Они живут в Москве.", "answer": "They live in Moscow" },
+        { "type": "input", "question": "Переведите: Моя мама готовит ужин.", "answer": "My mother cooks dinner" },
+        { "type": "input", "question": "Заполните пропуски: I ___ (live) in Moscow. My mother ___ (work) in a bank.", "answer": "live, works" }
+      ]
+    }
+  ]
+}
