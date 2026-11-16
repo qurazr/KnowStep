@@ -1,0 +1,8 @@
+{
+  "topics": [
+    { "id": "a1-lesson-01", "title": "Урок 1. Глагол to be: утверждение", "file": "lessons/a1-lesson-01.json" },
+    { "id": "a1-lesson-02", "title": "Урок 2. Глагол to be: отрицание", "file": "lessons/a1-lesson-02.json" },
+    { "id": "a1-lesson-02", "title": "Урок 3. Глагол to be: вопросы и краткие ответы", "file": "lessons/a1-lesson-03.json" },
+    { "id": "a1-lesson-02", "title": "Урок 4. Притяжательные местоимения: my / your / his / her / its / our / their", "file": "lessons/a1-lesson-04.json" }
+  ]
+}

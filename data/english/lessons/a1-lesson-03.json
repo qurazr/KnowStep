@@ -1,0 +1,49 @@
+{
+  "topics": [
+    {
+      "id": "a1-lesson-03",
+      "title": "Урок 3. Глагол to be: вопросы и краткие ответы",
+      "theory_pages": [
+        "<h2>3.1. Как строится вопрос с to be</h2><p>Вопрос с to be строится <b>перестановкой</b>: глагол to be выходит на <b>первое место</b>, перед подлежащим. Никаких вспомогательных do / does не нужно.</p><table class='grammar-table'><tr><th>Утверждение</th><th>Вопрос</th></tr><tr><td><b>You are</b> ready.</td><td><b>Are you</b> ready?</td></tr><tr><td><b>He is</b> a driver.</td><td><b>Is he</b> a driver?</td></tr><tr><td><b>She is</b> a teacher.</td><td><b>Is she</b> a teacher?</td></tr><tr><td><b>They are</b> at home.</td><td><b>Are they</b> at home?</td></tr><tr><td><b>It is</b> cold.</td><td><b>Is it</b> cold?</td></tr><tr><td><b>I am</b> late.</td><td><b>Am I</b> late?</td></tr></table><p><b>Схема:</b> Am / Is / Are + подлежащее + остальное?</p>",
+        "<h2>3.2. Краткие ответы (short answers)</h2><p>На вопрос с to be нельзя ответить просто Yes или No — нужен <b>краткий ответ</b> с местоимением и to be.</p><table class='grammar-table'><tr><th>Вопрос</th><th>Утвердительный ответ</th><th>Отрицательный ответ</th></tr><tr><td><b>Are</b> you ready?</td><td>Yes, I <b>am</b>.</td><td>No, I<b>'m not</b>.</td></tr><tr><td><b>Is</b> he a driver?</td><td>Yes, he <b>is</b>.</td><td>No, he <b>isn't</b>.</td></tr><tr><td><b>Is</b> she a teacher?</td><td>Yes, she <b>is</b>.</td><td>No, she <b>isn't</b>.</td></tr><tr><td><b>Are</b> they at home?</td><td>Yes, they <b>are</b>.</td><td>No, they <b>aren't</b>.</td></tr><tr><td><b>Is</b> it cold?</td><td>Yes, it <b>is</b>.</td><td>No, it <b>isn't</b>.</td></tr><tr><td><b>Am</b> I late?</td><td>Yes, you <b>are</b>.</td><td>No, you <b>aren't</b>.</td></tr></table><p><b>Два важных нюанса:</b></p><ol><li>В <b>утвердительном</b> кратком ответе to be <b>не сокращается</b>: <i>Yes, I am</i> ✅ (не <i>Yes, I'm</i> ❌), <i>Yes, he is</i> ✅ (не <i>Yes, he's</i> ❌).</li><li>В <b>отрицательном</b> кратком ответе to be <b>сокращается</b>: <i>No, I'm not</i> ✅, <i>No, he isn't</i> ✅.</li></ol>",
+        "<h2>3.3. Вопрос к I → ответ you</h2><p>Если вопрос задан с <i>I</i>, в ответе подлежащее меняется на <i>you</i>:</p><ul><li><b>Am I</b> late? — Yes, <b>you are</b>. / No, <b>you aren't</b>.</li><li><b>Am I</b> a good student? — Yes, <b>you are</b>.</li></ul><h2>3.4. Вопросы с this / that / these / those</h2><p>На уровне A1 часто встречаются вопросы-указания:</p><ul><li><b>Is this</b> a book? — Yes, <b>it is</b>. / No, <b>it isn't</b>.</li><li><b>Is that</b> a cat? — Yes, <b>it is</b>.</li><li><b>Are these</b> your keys? — Yes, <b>they are</b>.</li><li><b>Are those</b> books? — No, <b>they aren't</b>.</li></ul><p><b>Нюанс:</b> в ответе <i>this / that</i> заменяем на <b>it</b>, <i>these / those</i> — на <b>they</b>.</p>",
+        "<h2>3.5. Вопросы с who / what (базово)</h2><p>С вопросительным словом схема: <b>Who / What + to be + подлежащее?</b></p><ul><li><b>Who is</b> he? — He <b>is</b> my friend.</li><li><b>What is</b> this? — It <b>is</b> a book.</li><li><b>Who are</b> they? — They <b>are</b> students.</li></ul><p>Здесь to be тоже выходит перед подлежащим, но после вопросительного слова.</p><h2>3.6. Типичные ошибки</h2><ol><li><b>Лишний do / does:</b> Do you are ready? ❌ → Are you ready? ✅</li><li><b>Сокращение в утвердительном кратком ответе:</b> Yes, I'm ❌ → Yes, I am ✅</li><li><b>Пропуск to be в кратком ответе:</b> Yes, I ❌ → Yes, I am ✅</li><li><b>Неверное местоимение в ответе:</b> Is he a driver? — Yes, she is ❌ → Yes, he is ✅</li><li><b>Путаница is / are в вопросе:</b> Are he a driver? ❌ → Is he a driver? ✅</li><li><b>Ответ it на вопрос с these:</b> Are these books? — Yes, it is ❌ → Yes, they are ✅</li></ol>"
+      ],
+      "exercises": [
+        { "type": "choice", "question": "___ you ready?", "options": ["Am", "Is", "Are"], "answer": "Are" },
+        { "type": "choice", "question": "___ he a driver?", "options": ["Am", "Is", "Are"], "answer": "Is" },
+        { "type": "choice", "question": "___ she a teacher?", "options": ["Am", "Is", "Are"], "answer": "Is" },
+        { "type": "choice", "question": "___ they at home?", "options": ["Am", "Is", "Are"], "answer": "Are" },
+        { "type": "choice", "question": "___ it cold?", "options": ["Am", "Is", "Are"], "answer": "Is" },
+        { "type": "choice", "question": "___ I late?", "options": ["Am", "Is", "Are"], "answer": "Am" },
+        { "type": "choice", "question": "___ we students?", "options": ["Am", "Is", "Are"], "answer": "Are" },
+        { "type": "choice", "question": "___ your mother a nurse?", "options": ["Am", "Is", "Are"], "answer": "Is" },
+        { "type": "choice", "question": "___ these books new?", "options": ["Am", "Is", "Are"], "answer": "Are" },
+        { "type": "choice", "question": "___ that a cat?", "options": ["Am", "Is", "Are"], "answer": "Is" },
+        { "type": "input", "question": "Ответьте: Are you ready? — Yes, ___ .", "answer": "I am" },
+        { "type": "input", "question": "Ответьте: Is he a driver? — Yes, ___ .", "answer": "he is" },
+        { "type": "input", "question": "Ответьте: Is she a teacher? — Yes, ___ .", "answer": "she is" },
+        { "type": "input", "question": "Ответьте: Are they at home? — Yes, ___ .", "answer": "they are" },
+        { "type": "input", "question": "Ответьте: Is it cold? — Yes, ___ .", "answer": "it is" },
+        { "type": "input", "question": "Ответьте: Are you tired? — No, ___ .", "answer": "I'm not" },
+        { "type": "input", "question": "Ответьте: Is he a doctor? — No, ___ .", "answer": "he isn't" },
+        { "type": "input", "question": "Ответьте: Is she from China? — No, ___ .", "answer": "she isn't" },
+        { "type": "input", "question": "Ответьте: Are they ready? — No, ___ .", "answer": "they aren't" },
+        { "type": "input", "question": "Ответьте: Is it warm? — No, ___ .", "answer": "it isn't" },
+        { "type": "input", "question": "Составьте вопрос: You are ready. → ___ ?", "answer": "Are you ready" },
+        { "type": "input", "question": "Составьте вопрос: He is a driver. → ___ ?", "answer": "Is he a driver" },
+        { "type": "input", "question": "Составьте вопрос: They are at home. → ___ ?", "answer": "Are they at home" },
+        { "type": "input", "question": "Составьте вопрос: It is cold. → ___ ?", "answer": "Is it cold" },
+        { "type": "input", "question": "Исправьте ошибку: Do you are ready?", "answer": "Are you ready" },
+        { "type": "input", "question": "Исправьте ошибку: Yes, I'm.", "answer": "Yes, I am" },
+        { "type": "input", "question": "Исправьте ошибку: Is he a driver? — Yes, she is.", "answer": "Yes, he is" },
+        { "type": "input", "question": "Исправьте ошибку: No, I amn't.", "answer": "No, I'm not" },
+        { "type": "input", "question": "Переведите: Ты готов?", "answer": "Are you ready" },
+        { "type": "input", "question": "Переведите: Она учитель?", "answer": "Is she a teacher" },
+        { "type": "input", "question": "Переведите: Они дома?", "answer": "Are they at home" },
+        { "type": "input", "question": "Переведите: Я опоздал?", "answer": "Am I late" },
+        { "type": "input", "question": "Заполните пропуски: ___ you a student? — Yes, I ___ .", "answer": "Are, am" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "topics": [
+    {
+      "id": "a1-lesson-01",
+      "title": "Урок 1. Глагол to be: утверждение (am / is / are)",
+      "theory_pages": [
+        "<h2>1.1. Зачем нужен to be</h2><p>В русском языке мы говорим: «Я студент», «Она учитель». В английском так нельзя. Между подлежащим и тем, что о нём говорится, обязательно ставится глагол-связка <b>to be</b>.</p><p><b>Главное правило:</b> в английском утвердительном предложении с to be глагол-связка никогда не опускается.</p>",
+        "<h2>1.2. Три формы в настоящем времени</h2><table class='grammar-table'><tr><th>Кто</th><th>Форма</th><th>Пример</th></tr><tr><td>I</td><td>am</td><td>I am ready.</td></tr><tr><td>You</td><td>are</td><td>You are ready.</td></tr><tr><td>He / She / It</td><td>is</td><td>He is ready.</td></tr><tr><td>We / They</td><td>are</td><td>We are ready.</td></tr></table>",
+        "<h2>1.3. Сокращения</h2><p>В разговорной речи to be почти всегда сокращается:</p><ul><li>I am → <b>I'm</b></li><li>You are → <b>You're</b></li><li>He is → <b>He's</b></li><li>She is → <b>She's</b></li><li>It is → <b>It's</b></li><li>We are → <b>We're</b></li><li>They are → <b>They're</b></li></ul>",
+        "<h2>1.4. Артикль a / an</h2><p>Артикль <b>a / an</b> ставится перед <b>исчисляемым существительным в единственном числе</b>, когда мы говорим о ком-то или чём-то впервые (один из многих).</p><p><b>Правило:</b> если после to be идёт существительное (профессия, роль, статус), нужен артикль:</p><ul><li>I am <b>a</b> student. (я студент — существительное)</li><li>She is <b>a</b> teacher. (она учитель — существительное)</li><li>He is <b>an</b> engineer. (он инженер — существительное, перед гласным звуком)</li></ul><p><b>Артикль НЕ нужен</b>, если после to be идёт прилагательное (усталый, готовый, холодный) или предлог from:</p><ul><li>I am tired. (не a tired)</li><li>She is from Russia. (не a from Russia)</li><li>It is cold. (не a cold)</li></ul>",
+        "<h2>1.5. Типичные ошибки</h2><ul><li>Пропуск to be: I student ❌ → I am a student ✅</li><li>Путаница is / are: They is ready ❌ → They are ready ✅</li><li>Лишний артикль с прилагательным: I am a tired ❌ → I am tired ✅</li></ul>"
+      ],
+      "exercises": [
+        { "type": "choice", "question": "I ___ a student.", "options": ["am", "is", "are"], "answer": "am" },
+        { "type": "choice", "question": "She ___ a teacher.", "options": ["am", "is", "are"], "answer": "is" },
+        { "type": "choice", "question": "They ___ ready.", "options": ["am", "is", "are"], "answer": "are" },
+        { "type": "choice", "question": "He ___ a driver.", "options": ["am", "is", "are"], "answer": "is" },
+        { "type": "choice", "question": "It ___ cold.", "options": ["am", "is", "are"], "answer": "is" },
+        { "type": "choice", "question": "We ___ from Russia.", "options": ["am", "is", "are"], "answer": "are" },
+        { "type": "choice", "question": "You ___ tired.", "options": ["am", "is", "are"], "answer": "are" },
+        { "type": "choice", "question": "My mother ___ a nurse.", "options": ["am", "is", "are"], "answer": "is" },
+        { "type": "choice", "question": "My friends ___ at home.", "options": ["am", "is", "are"], "answer": "are" },
+        { "type": "choice", "question": "This book ___ new.", "options": ["am", "is", "are"], "answer": "is" },
+        { "type": "input", "question": "Вставьте am / is / are: The cat ___ small.", "answer": "is" },
+        { "type": "input", "question": "Вставьте am / is / are: My parents ___ in London.", "answer": "are" },
+        { "type": "input", "question": "Вставьте am / is / are: The books ___ on the table.", "answer": "are" },
+        { "type": "input", "question": "Вставьте am / is / are: His sister ___ a doctor.", "answer": "is" },
+        { "type": "input", "question": "Вставьте am / is / are: These chairs ___ old.", "answer": "are" },
+        { "type": "input", "question": "Сократите: I am ready. → ___", "answer": "I'm ready" },
+        { "type": "input", "question": "Сократите: She is a teacher. → ___", "answer": "She's a teacher" },
+        { "type": "input", "question": "Сократите: They are at home. → ___", "answer": "They're at home" },
+        { "type": "input", "question": "Сократите: He is a driver. → ___", "answer": "He's a driver" },
+        { "type": "input", "question": "Сократите: We are from Russia. → ___", "answer": "We're from Russia" },
+        { "type": "input", "question": "Исправьте ошибку: I student.", "answer": "I am a student" },
+        { "type": "input", "question": "Исправьте ошибку: She are a teacher.", "answer": "She is a teacher" },
+        { "type": "input", "question": "Исправьте ошибку: They is ready.", "answer": "They are ready" },
+        { "type": "input", "question": "Исправьте ошибку: He am a driver.", "answer": "He is a driver" },
+        { "type": "input", "question": "Переведите: Я студент.", "answer": "I am a student" },
+        { "type": "input", "question": "Переведите: Она учитель.", "answer": "She is a teacher" },
+        { "type": "input", "question": "Переведите: Они готовы.", "answer": "They are ready" },
+        { "type": "input", "question": "Переведите: Это холодно.", "answer": "It is cold" },
+        { "type": "input", "question": "Заполните пропуски (am / is / are): My name ___ Anna. I ___ a student.", "answer": "is, am" }
+      ]
+    }
+  ]
+}

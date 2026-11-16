@@ -1,0 +1,5 @@
+{
+  "categories": [
+    { "id": "languages", "title": "Иностранные языки", "file": "languages.json" }
+  ]
+}

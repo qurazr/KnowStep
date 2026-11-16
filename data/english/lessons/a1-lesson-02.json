@@ -1,0 +1,44 @@
+{
+  "topics": [
+    {
+      "id": "a1-lesson-02",
+      "title": "Урок 2. Глагол to be: отрицание (am not / isn't / aren't)",
+      "theory_pages": [
+        "<h2>2.1. Как строится отрицание</h2><p>Отрицательное предложение с to be строится предельно просто: <b>подлежащее + to be + not + остальное</b>.</p><table class='grammar-table'><tr><th>Утверждение</th><th>Отрицание</th></tr><tr><td>I <b>am</b> a student.</td><td>I <b>am not</b> a student.</td></tr><tr><td>She <b>is</b> a teacher.</td><td>She <b>is not</b> a teacher.</td></tr><tr><td>They <b>are</b> ready.</td><td>They <b>are not</b> ready.</td></tr></table><p>Порядок слов не меняется — <i>not</i> просто встаёт <b>после</b> глагола to be. Никаких вспомогательных <i>do / does</i> здесь не нужно.</p>",
+        "<h2>2.2. Полные и сокращённые формы</h2><p>В речи и неформальном письме <i>not</i> почти всегда сливается с to be:</p><table class='grammar-table'><tr><th>Полная форма</th><th>Сокращение</th><th>Пример</th></tr><tr><td>I am not</td><td><b>I'm not</b></td><td><b>I'm not</b> tired.</td></tr><tr><td>You are not</td><td><b>You aren't</b> / You're not</td><td><b>You aren't</b> ready.</td></tr><tr><td>He is not</td><td><b>He isn't</b> / He's not</td><td><b>He isn't</b> a driver.</td></tr><tr><td>She is not</td><td><b>She isn't</b> / She's not</td><td><b>She isn't</b> a teacher.</td></tr><tr><td>It is not</td><td><b>It isn't</b> / It's not</td><td><b>It isn't</b> cold.</td></tr><tr><td>We are not</td><td><b>We aren't</b> / We're not</td><td><b>We aren't</b> at home.</td></tr><tr><td>They are not</td><td><b>They aren't</b> / They're not</td><td><b>They aren't</b> students.</td></tr></table><p><b>Главная ловушка:</b> для <i>I</i> нет сокращения <i>amn't</i>. Только <b>I'm not</b>. Форма <i>I amn't</i> ❌ — грубая ошибка.</p><p><b>Нюанс:</b> у you / he / she / it / we / they есть два варианта сокращения — <i>isn't / aren't</i> и <i>'s not / 're not</i>. Оба правильные, но <i>isn't / aren't</i> встречается чаще в речи.</p>",
+        "<h2>2.3. Отрицание с артиклем и без</h2><p>Помните из Урока 1: артикль <b>a / an</b> ставится перед <b>исчисляемым существительным в единственном числе</b> (профессия, роль, статус). В отрицании правило <b>сохраняется</b>:</p><ul><li>She <b>isn't a</b> teacher. (профессия — артикль есть)</li><li>She <b>isn't</b> tired. (прилагательное — артикля нет)</li><li>He <b>isn't from</b> Russia. (перед from — артикля нет)</li></ul><h2>2.4. Not и no — не путать</h2><p>На уровне A1 достаточно запомнить: с to be используем <b>not</b> после глагола. Слово <i>no</i> ставится перед существительным (<i>I have no money</i>), но это другая конструкция, и она будет позже. В рамках to be — только <b>not</b>.</p>",
+        "<h2>2.5. Типичные ошибки</h2><ol><li><b>Лишний do / does:</b> I don't am tired ❌ → I'm not tired ✅</li><li><b>Неверное сокращение для I:</b> I amn't ❌ → I'm not ✅</li><li><b>Пропуск not:</b> She isn't teacher ❌ (нет артикля) → She isn't a teacher ✅</li><li><b>Not перед глаголом:</b> I not am ready ❌ → I'm not ready ✅</li><li><b>Путаница isn't / aren't:</b> They isn't ready ❌ → They aren't ready ✅</li></ol><h2>2.6. Смысл отрицания</h2><p>Отрицание с to be используется, когда мы говорим, что что-то <b>не является</b> кем-то/чем-то, <b>не находится</b> где-то или <b>не имеет</b> какого-то качества:</p><ul><li>I'm not a doctor. (не являюсь)</li><li>She isn't at home. (не находится)</li><li>It isn't cold. (не имеет качества)</li></ul>"
+      ],
+      "exercises": [
+        { "type": "choice", "question": "I ___ a doctor.", "options": ["am not", "isn't", "aren't"], "answer": "am not" },
+        { "type": "choice", "question": "She ___ a teacher.", "options": ["am not", "isn't", "aren't"], "answer": "isn't" },
+        { "type": "choice", "question": "They ___ ready.", "options": ["am not", "isn't", "aren't"], "answer": "aren't" },
+        { "type": "choice", "question": "He ___ a driver.", "options": ["am not", "isn't", "aren't"], "answer": "isn't" },
+        { "type": "choice", "question": "It ___ cold.", "options": ["am not", "isn't", "aren't"], "answer": "isn't" },
+        { "type": "choice", "question": "We ___ from China.", "options": ["am not", "isn't", "aren't"], "answer": "aren't" },
+        { "type": "choice", "question": "You ___ tired.", "options": ["am not", "isn't", "aren't"], "answer": "aren't" },
+        { "type": "choice", "question": "My mother ___ a nurse.", "options": ["am not", "isn't", "aren't"], "answer": "isn't" },
+        { "type": "choice", "question": "My friends ___ at home.", "options": ["am not", "isn't", "aren't"], "answer": "aren't" },
+        { "type": "choice", "question": "This book ___ new.", "options": ["am not", "isn't", "aren't"], "answer": "isn't" },
+        { "type": "input", "question": "Вставьте: The cat ___ big. (введите isn't / aren't)", "answer": "isn't" },
+        { "type": "input", "question": "Вставьте: My parents ___ in London. (введите isn't / aren't)", "answer": "aren't" },
+        { "type": "input", "question": "Вставьте: The books ___ on the table. (введите isn't / aren't)", "answer": "aren't" },
+        { "type": "input", "question": "Вставьте: His sister ___ a doctor. (введите isn't / aren't)", "answer": "isn't" },
+        { "type": "input", "question": "Сократите: I am not ready. → ___", "answer": "I'm not ready" },
+        { "type": "input", "question": "Сократите: She is not a teacher. → ___", "answer": "She isn't a teacher" },
+        { "type": "input", "question": "Сократите: They are not at home. → ___", "answer": "They aren't at home" },
+        { "type": "input", "question": "Сократите: He is not a driver. → ___", "answer": "He isn't a driver" },
+        { "type": "input", "question": "Сократите: We are not from Russia. → ___", "answer": "We aren't from Russia" },
+        { "type": "input", "question": "Исправьте ошибку: I not am a student.", "answer": "I'm not a student" },
+        { "type": "input", "question": "Исправьте ошибку: She amn't a teacher.", "answer": "She isn't a teacher" },
+        { "type": "input", "question": "Исправьте ошибку: They isn't ready.", "answer": "They aren't ready" },
+        { "type": "input", "question": "Исправьте ошибку: He aren't a driver.", "answer": "He isn't a driver" },
+        { "type": "input", "question": "Переведите: Я не студент.", "answer": "I'm not a student" },
+        { "type": "input", "question": "Переведите: Она не учитель.", "answer": "She isn't a teacher" },
+        { "type": "input", "question": "Переведите: Они не готовы.", "answer": "They aren't ready" },
+        { "type": "input", "question": "Переведите: Это не холодно.", "answer": "It isn't cold" },
+        { "type": "input", "question": "Заполните пропуски (am not / isn't / aren't): My name ___ Anna. I ___ a teacher.", "answer": "is, am not" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>KnowStep — Твой путь к знаниям</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Скрипт Google Identity Services (пока закомментирован, чтобы не мешал дизайну) -->
+  <!-- <script src="https://accounts.google.com/gsi/client" async defer></script> -->
+</head>
+<body>
+  <!-- Шапка сайта -->
+  <header class="site-header">
+    <div class="logo" onclick="goHome()">KnowStep</div>
+    <div id="user-profile" class="hidden">
+      <img id="user-avatar" src="" alt="Avatar">
+      <button id="logoutBtn" class="login-btn" style="background:#ef4444; margin-left:10px;">Выйти</button>
+    </div>
+    <button id="loginBtn" class="login-btn">Войти</button>
+  </header>
+
+  <!-- Основной контент -->
+  <main id="app">
+    <div id="nav-header" class="hidden">
+      <button id="backBtn" class="back">←</button>
+      <h1 id="title"></h1>
+    </div>
+    <div id="main">
+      <!-- Сюда загружаются карточки -->
+    </div>
+  </main>
+
+  <!-- Подвал (опционально) -->
+  <footer class="site-footer">
+    <p>© 2026 KnowStep. Учись с удовольствием.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

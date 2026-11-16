@@ -1,0 +1,52 @@
+{
+  "topics": [
+    {
+      "id": "a1-lesson-04",
+      "title": "Урок 4. Притяжательные местоимения: my / your / his / her / its / our / their",
+      "theory_pages": [
+        "<h2>4.1. Что такое притяжательные местоимения</h2><p>Притяжательные местоимения отвечают на вопрос <b>«чей?»</b> и показывают, кому принадлежит предмет. В английском они ставятся <b>перед существительным</b> и <b>не меняются</b> по числу предмета:</p><ul><li><b>my</b> book — моя книга</li><li><b>my</b> books — мои книги (местоимение не изменилось!)</li></ul><table class='grammar-table'><tr><th>Личное местоимение</th><th>Притяжательное</th><th>Перевод</th><th>Пример</th></tr><tr><td>I</td><td><b>my</b></td><td>мой / моя / моё / мои</td><td><b>my</b> name</td></tr><tr><td>You</td><td><b>your</b></td><td>твой / ваш</td><td><b>your</b> book</td></tr><tr><td>He</td><td><b>his</b></td><td>его</td><td><b>his</b> car</td></tr><tr><td>She</td><td><b>her</b></td><td>её</td><td><b>her</b> bag</td></tr><tr><td>It</td><td><b>its</b></td><td>его / её (для предметов и животных)</td><td><b>its</b> name</td></tr><tr><td>We</td><td><b>our</b></td><td>наш</td><td><b>our</b> house</td></tr><tr><td>They</td><td><b>their</b></td><td>их</td><td><b>their</b> dog</td></tr></table><p><b>Главное правило:</b> притяжательное местоимение всегда стоит перед существительным и никогда не меняется в зависимости от числа этого существительного.</p>",
+        "<h2>4.2. His vs her — главная ловушка</h2><p>Выбор зависит <b>только от того, кому принадлежит предмет</b>, а не от рода предмета в русском языке:</p><ul><li><b>He</b> is a student. <b>His</b> name is Ivan. (его имя)</li><li><b>She</b> is a student. <b>Her</b> name is Anna. (её имя)</li><li><b>He</b> has a car. <b>His</b> car is new. (его машина)</li><li><b>She</b> has a car. <b>Her</b> car is new. (её машина)</li></ul><p><b>Нюанс:</b> в русском «её машина» и «его машина» — разные слова, но в английском <i>her car</i> и <i>his car</i> тоже разные. Однако <b>род русского существительного</b> (машина — женский) <b>не влияет</b> на выбор: важно только, <b>кто владелец</b> (he → his, she → her).</p>",
+        "<h2>4.3. Its — для предметов и животных</h2><p><i>Its</i> используется, когда владелец — <b>предмет, животное или явление</b> (не человек):</p><ul><li>The cat is small. <b>Its</b> name is Tom. (его/её имя — для кота)</li><li>The book is new. <b>Its</b> cover is red. (её обложка — для книги)</li></ul><p><b>Важно:</b> <i>its</i> ≠ <i>it's</i>. <i>It's</i> = <i>it is</i> (это есть). <i>Its</i> = «его/её» для предмета. Это разные слова!</p><ul><li><b>It's</b> cold. (Это холодно. = It is cold.)</li><li>The dog is happy. <b>Its</b> tail is long. (Его хвост длинный.)</li></ul>",
+        "<h2>4.4. My vs mine — не путать (кратко)</h2><p>На уровне A1 мы берём только <b>притяжательные прилагательные</b> (<i>my, your, his…</i>), которые <b>стоят перед существительным</b>. Слова <i>mine, yours, his, hers</i> (без существительного) — это <b>притяжательные местоимения</b>, они будут в отдельном уроке позже. Пока запомните: <i>my book</i> ✅, <i>mine book</i> ❌.</p><h2>4.5. Притяжательные местоимения с to be</h2><p>Очень частая конструкция на A1:</p><ul><li><b>My</b> name <b>is</b> Anna.</li><li><b>His</b> car <b>is</b> new.</li><li><b>Her</b> bag <b>is</b> red.</li><li><b>Our</b> house <b>is</b> big.</li><li><b>Their</b> dog <b>is</b> small.</li></ul><p>Здесь to be согласуется с <b>существительным</b> (name → is, car → is, bags → are), а не с местоимением.</p>",
+        "<h2>4.6. Типичные ошибки</h2><ol><li><b>Путаница his / her:</b> She is a student. His name is Anna ❌ → Her name is Anna ✅</li><li><b>Its вместо it's:</b> Its cold ❌ → It's cold ✅</li><li><b>Mine вместо my:</b> Mine book is new ❌ → My book is new ✅</li><li><b>Местоимение после существительного:</b> book my ❌ → my book ✅</li><li><b>Согласование с русским родом:</b> My mother is a doctor. His name is Olga ❌ → Her name is Olga ✅</li><li><b>Забытое its для животного:</b> The cat is small. Her name is Tom ❌ (если кот — самец) → Its name is Tom ✅ (или His name is Tom, если известен пол)</li></ol>"
+      ],
+      "exercises": [
+        { "type": "choice", "question": "I am a student. ___ name is Anna.", "options": ["My", "Your", "His", "Her"], "answer": "My" },
+        { "type": "choice", "question": "You are ready. ___ book is on the table.", "options": ["My", "Your", "His", "Her"], "answer": "Your" },
+        { "type": "choice", "question": "He is a driver. ___ car is new.", "options": ["My", "Your", "His", "Her"], "answer": "His" },
+        { "type": "choice", "question": "She is a teacher. ___ bag is red.", "options": ["My", "Your", "His", "Her"], "answer": "Her" },
+        { "type": "choice", "question": "I have a phone. ___ phone is old.", "options": ["My", "Your", "His", "Her"], "answer": "My" },
+        { "type": "choice", "question": "You have a dog. ___ dog is small.", "options": ["My", "Your", "His", "Her"], "answer": "Your" },
+        { "type": "choice", "question": "He has a sister. ___ sister is a nurse.", "options": ["My", "Your", "His", "Her"], "answer": "His" },
+        { "type": "choice", "question": "She has a brother. ___ brother is a student.", "options": ["My", "Your", "His", "Her"], "answer": "Her" },
+        { "type": "choice", "question": "He is a doctor. ___ name is Ivan.", "options": ["His", "Her"], "answer": "His" },
+        { "type": "choice", "question": "She is a teacher. ___ name is Anna.", "options": ["His", "Her"], "answer": "Her" },
+        { "type": "choice", "question": "My father is a driver. ___ car is old.", "options": ["His", "Her"], "answer": "His" },
+        { "type": "choice", "question": "My mother is a nurse. ___ job is hard.", "options": ["His", "Her"], "answer": "Her" },
+        { "type": "choice", "question": "___ cold today. (Это холодно)", "options": ["Its", "It's"], "answer": "It's" },
+        { "type": "choice", "question": "The cat is small. ___ name is Tom.", "options": ["Its", "It's"], "answer": "Its" },
+        { "type": "choice", "question": "The book is new. ___ cover is red.", "options": ["Its", "It's"], "answer": "Its" },
+        { "type": "choice", "question": "We are students. ___ books are new.", "options": ["Our", "Their", "His"], "answer": "Our" },
+        { "type": "choice", "question": "They are at home. ___ house is big.", "options": ["Our", "Their", "Her"], "answer": "Their" },
+        { "type": "choice", "question": "The cat is small. ___ name is Tom.", "options": ["Its", "His", "Her"], "answer": "Its" },
+        { "type": "input", "question": "Вставьте: I am a student. ___ name is Anna. (введите My / Your / His / Her)", "answer": "My" },
+        { "type": "input", "question": "Вставьте: He is a driver. ___ car is new. (введите My / Your / His / Her)", "answer": "His" },
+        { "type": "input", "question": "Вставьте: She is a teacher. ___ bag is red. (введите My / Your / His / Her)", "answer": "Her" },
+        { "type": "input", "question": "Вставьте: We are students. ___ books are new. (введите Our / Their)", "answer": "Our" },
+        { "type": "input", "question": "Вставьте: They are at home. ___ house is big. (введите Our / Their)", "answer": "Their" },
+        { "type": "input", "question": "Вставьте: ___ cold today. (введите Its / It's)", "answer": "It's" },
+        { "type": "input", "question": "Вставьте: The cat is small. ___ name is Tom. (введите Its / It's)", "answer": "Its" },
+        { "type": "input", "question": "Переведите: Меня зовут Анна.", "answer": "My name is Anna" },
+        { "type": "input", "question": "Переведите: Его машина новая.", "answer": "His car is new" },
+        { "type": "input", "question": "Переведите: Её сумка красная.", "answer": "Her bag is red" },
+        { "type": "input", "question": "Переведите: Наш дом большой.", "answer": "Our house is big" },
+        { "type": "input", "question": "Переведите: Это холодно.", "answer": "It's cold" },
+        { "type": "input", "question": "Исправьте ошибку: She is a student. His name is Anna.", "answer": "Her name is Anna" },
+        { "type": "input", "question": "Исправьте ошибку: Its cold today.", "answer": "It's cold today" },
+        { "type": "input", "question": "Исправьте ошибку: Mine book is new.", "answer": "My book is new" },
+        { "type": "input", "question": "Исправьте ошибку: Book my is on the table.", "answer": "My book is on the table" },
+        { "type": "input", "question": "Заполните пропуски: Hello! ___ name is Anna. I am a student. ___ friend is Ivan.", "answer": "My, My" }
+      ]
+    }
+  ]
+}
