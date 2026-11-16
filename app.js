@@ -167,11 +167,12 @@ function renderPaginatedTheory(topic) {
   const totalPages = topic.theory_pages.length;
 
   function drawPage() {
+    // Меняем структуру: сначала кнопки, потом текст страницы
     $main.innerHTML = `
       <div class="theory">${topic.theory_pages[currentPage]}</div>
       <div class="theory-nav">
         <button id="prevBtn" ${currentPage === 0 ? 'disabled' : ''}>← Назад</button>
-        <span>Страница ${currentPage + 1} из ${totalPages}</span>
+        <span>${currentPage + 1} / ${totalPages}</span>
         <button id="nextBtn">${currentPage === totalPages - 1 ? 'К упражнениям →' : 'Вперед →'}</button>
       </div>
       <div id="exercises-container" class="hidden"></div>
@@ -186,7 +187,6 @@ function renderPaginatedTheory(topic) {
         currentPage++; 
         drawPage(); 
       } else {
-        // Показываем упражнения, скрываем теорию
         document.querySelector('.theory').classList.add('hidden');
         document.querySelector('.theory-nav').classList.add('hidden');
         
