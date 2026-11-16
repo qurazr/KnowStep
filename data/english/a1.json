@@ -9,6 +9,11 @@
     { "id": "a1-lesson-01", "title": "Урок 7. There is / There are: «есть, находится»", "file": "lessons/a1-lesson-07.json" },
     { "id": "a1-lesson-01", "title": "Урок 8. Present Simple: утверждение («я делаю это каждый день»)", "file": "lessons/a1-lesson-08.json" },
     { "id": "a1-lesson-01", "title": "Урок 9. Present Simple: отрицание (don't / doesn't)", "file": "lessons/a1-lesson-09.json" },
-    { "id": "a1-lesson-01", "title": "Урок 10. Present Simple: вопросы (Do you…? Does he…?)", "file": "lessons/a1-lesson-10.json" }
+    { "id": "a1-lesson-01", "title": "Урок 10. Present Simple: вопросы (Do you…? Does he…?)", "file": "lessons/a1-lesson-10.json" },
+    { "id": "a1-lesson-01", "title": "Урок 11. Can: «я умею / могу»", "file": "lessons/a1-lesson-11.json" },
+    { "id": "a1-lesson-01", "title": "Урок 12. Наречия частоты: always, usually, often, sometimes, never", "file": "lessons/a1-lesson-12.json" },
+    { "id": "a1-lesson-01", "title": "Урок 13. Present Continuous: «я делаю это сейчас»", "file": "lessons/a1-lesson-13.json" },
+    { "id": "a1-lesson-01", "title": "Урок 14. Present Continuous: отрицание и вопросы", "file": "lessons/a1-lesson-14.json" },
+    { "id": "a1-lesson-01", "title": "Урок 15. Предлоги времени: at, on, in", "file": "lessons/a1-lesson-15.json" }
   ]
 }

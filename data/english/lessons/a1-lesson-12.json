@@ -1,0 +1,39 @@
+{
+  "topics": [
+    {
+      "id": "a1-lesson-12",
+      "title": "Урок 12. Наречия частоты: always, usually, often, sometimes, never",
+      "theory_pages": [
+        "<h2>12.1. Что такое наречия частоты</h2><p>Наречия частоты отвечают на вопрос <b>«как часто?»</b> и показывают, как регулярно происходит действие. Они используются с Present Simple (урок 8), потому что Present Simple описывает привычки и регулярные действия.</p><table class='grammar-table'><tr><th>Наречие</th><th>Перевод</th><th>Примерная частота</th></tr><tr><td><b>always</b></td><td>всегда</td><td>100%</td></tr><tr><td><b>usually</b></td><td>обычно</td><td>~80–90%</td></tr><tr><td><b>often</b></td><td>часто</td><td>~60–70%</td></tr><tr><td><b>sometimes</b></td><td>иногда</td><td>~30–50%</td></tr><tr><td><b>never</b></td><td>никогда</td><td>0%</td></tr></table><p><b>Нюанс:</b> never уже содержит отрицание, поэтому в предложении <b>не используется don't / doesn't</b>: <i>He never eats meat</i> ✅ (не <i>he doesn't never eat</i> ❌).</p>",
+        "<h2>12.2. Место наречия в предложении</h2><p>Это <b>главное правило урока</b>. Позиция наречия зависит от типа глагола:</p><p><b>Правило 1: с обычным глаголом (work, play, go…) — наречие стоит ПЕРЕД глаголом:</b></p><ul><li>I <b>always drink</b> coffee in the morning.</li><li>She <b>usually walks</b> to work.</li><li>We <b>sometimes watch</b> films on Sunday.</li><li>He <b>never eats</b> meat.</li></ul><p><b>Правило 2: с глаголом to be (am / is / are) — наречие стоит ПОСЛЕ глагола:</b></p><ul><li>She <b>is always</b> late.</li><li>They <b>are usually</b> at home in the evening.</li><li>I <b>am never</b> tired in the morning.</li></ul><p><b>Правило 3: со вспомогательным глаголом (can, don't, doesn't) — наречие стоит ПОСЛЕ вспомогательного, но ПЕРЕД смысловым:</b></p><ul><li>I <b>can never</b> remember his name.</li><li>She <b>doesn't usually</b> eat breakfast.</li></ul><p><b>Мнемоника:</b> «обычный глагол — наречие перед ним; to be — наречие после него».</p>",
+        "<h2>12.3. Sometimes и usually в начале предложения</h2><p><i>Sometimes</i> и <i>usually</i> могут стоять <b>в начале</b> предложения для эмфазы (выделения):</p><ul><li><b>Sometimes</b> I watch TV in the morning.</li><li><b>Usually</b> she walks to work.</li></ul><p>Но <i>always</i> и <i>never</i> в начале предложения на A1 лучше не ставить — это звучит неестественно.</p><h2>12.4. Наречия частоты и Present Simple</h2><p>Поскольку наречия частоты описывают привычки, они сочетаются именно с Present Simple, а не с Present Continuous:</p><ul><li>I <b>always drink</b> coffee. ✅ (привычка)</li><li>I <b>am always drinking</b> coffee. ❌ (звучит странно, если не имеется в виду «постоянно пью прямо сейчас»)</li></ul>",
+        "<h2>12.5. Never и отрицание</h2><p><i>Never</i> = «никогда» (0%). Оно <b>само по себе отрицательное</b>, поэтому:</p><ul><li>He <b>never</b> eats meat. ✅</li><li>He <b>doesn't never</b> eat meat. ❌ (двойное отрицание)</li><li>He <b>doesn't</b> eat meat. ✅ (без never)</li></ul><p><b>Нюанс:</b> в кратких ответах never не используется; вместо него <i>No, I don't</i>.</p><h2>12.6. Наречия частоты с have got</h2><p>С <i>have got</i> (урок 6) наречие ставится <b>после have / has</b>:</p><ul><li>I <b>have always got</b> my phone with me.</li><li>She <b>has never got</b> money.</li></ul><p>Но это редкая конструкция на A1; чаще с have got наречия не используются.</p>",
+        "<h2>12.7. Типичные ошибки</h2><ol><li><b>Наречие после обычного глагола:</b> I drink always coffee ❌ → <b>I always drink coffee</b> ✅</li><li><b>Наречие перед to be:</b> She always is late ❌ → <b>She is always late</b> ✅</li><li><b>Двойное отрицание с never:</b> He doesn't never eat meat ❌ → <b>He never eats meat</b> ✅</li><li><b>Наречие между don't и глаголом:</b> I always don't drink coffee ❌ (правильно: <i>I don't always drink coffee</i>)</li><li><b>Путаница often и usually:</b> often = часто (~60–70%), usually = обычно (~80–90%).</li><li><b>Never в начале предложения:</b> Never I eat meat ❌ → <b>I never eat meat</b> ✅</li></ol>"
+      ],
+      "exercises": [
+        { "type": "choice", "question": "I ___ drink coffee in the morning. (100%)", "options": ["always", "usually", "often", "sometimes", "never"], "answer": "always" },
+        { "type": "choice", "question": "She ___ walks to work. (80–90%)", "options": ["always", "usually", "often", "sometimes", "never"], "answer": "usually" },
+        { "type": "choice", "question": "We ___ watch films on Sunday. (60–70%)", "options": ["always", "usually", "often", "sometimes", "never"], "answer": "often" },
+        { "type": "choice", "question": "He ___ eats meat. (0%)", "options": ["always", "usually", "often", "sometimes", "never"], "answer": "never" },
+        { "type": "choice", "question": "They ___ play tennis. (30–50%)", "options": ["always", "usually", "often", "sometimes", "never"], "answer": "sometimes" },
+        { "type": "choice", "question": "My mother ___ cooks dinner. (100%)", "options": ["always", "usually", "often", "sometimes", "never"], "answer": "always" },
+        { "type": "choice", "question": "She is ___ late.", "options": ["always", "usually", "often", "sometimes", "never"], "answer": "always" },
+        { "type": "choice", "question": "They are ___ at home in the evening.", "options": ["always", "usually", "often", "sometimes", "never"], "answer": "usually" },
+        { "type": "input", "question": "Вставьте: I ___ drink coffee in the morning. (100%) (введите always / usually / often / sometimes / never)", "answer": "always" },
+        { "type": "input", "question": "Вставьте: He ___ eats meat. (0%) (введите always / usually / often / sometimes / never)", "answer": "never" },
+        { "type": "input", "question": "Поставьте наречие в правильное место: I drink coffee in the morning. (always)", "answer": "I always drink coffee in the morning" },
+        { "type": "input", "question": "Поставьте наречие в правильное место: She walks to work. (usually)", "answer": "She usually walks to work" },
+        { "type": "input", "question": "Поставьте наречие в правильное место: She is late. (always)", "answer": "She is always late" },
+        { "type": "input", "question": "Поставьте наречие в правильное место: They are at home in the evening. (usually)", "answer": "They are usually at home in the evening" },
+        { "type": "input", "question": "Исправьте ошибку: I drink always coffee.", "answer": "I always drink coffee" },
+        { "type": "input", "question": "Исправьте ошибку: She always is late.", "answer": "She is always late" },
+        { "type": "input", "question": "Исправьте ошибку: He doesn't never eat meat.", "answer": "He never eats meat" },
+        { "type": "input", "question": "Переведите: Я всегда пью кофе утром.", "answer": "I always drink coffee in the morning" },
+        { "type": "input", "question": "Переведите: Она обычно ходит на работу пешком.", "answer": "She usually walks to work" },
+        { "type": "input", "question": "Переведите: Он никогда не ест мясо.", "answer": "He never eats meat" },
+        { "type": "input", "question": "Переведите: Они обычно дома вечером.", "answer": "They are usually at home in the evening" },
+        { "type": "input", "question": "Заполните пропуски: I ___ (always) drink coffee. She ___ (usually) walks to work.", "answer": "always, usually" }
+      ]
+    }
+  ]
+}

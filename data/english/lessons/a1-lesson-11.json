@@ -1,0 +1,34 @@
+{
+  "topics": [
+    {
+      "id": "a1-lesson-11",
+      "title": "Урок 11. Can: «я умею / могу»",
+      "theory_pages": [
+        "<h2>11.1. Что означает can</h2><p><b>Can</b> — это модальный глагол, который означает <b>«уметь, мочь»</b>. Он используется, когда мы говорим о способности что-то делать или о возможности.</p><ul><li>I <b>can</b> swim. = Я умею плавать.</li><li>She <b>can</b> cook. = Она умеет готовить.</li></ul><p><b>Важно:</b> can <b>не меняется</b> по лицам. Он одинаков для I, you, he, she, it, we, they.</p>",
+        "<h2>11.2. Формы: утверждение, отрицание, вопрос</h2><table class='grammar-table'><tr><th>Тип</th><th>Форма</th><th>Пример</th></tr><tr><td>Утверждение</td><td><b>can</b> + глагол</td><td>I <b>can swim</b>.</td></tr><tr><td>Отрицание</td><td><b>can't</b> (cannot) + глагол</td><td>She <b>can't swim</b>.</td></tr><tr><td>Вопрос</td><td><b>Can</b> + подлежащее + глагол?</td><td><b>Can</b> you <b>swim</b>?</td></tr></table><p><b>Краткие ответы:</b></p><ul><li>Can you swim? — Yes, I <b>can</b>. / No, I <b>can't</b>.</li></ul>",
+        "<h2>11.3. Важные правила</h2><ul><li>После <b>can</b> глагол стоит <b>без to</b>: I can swim ✅ (не I can to swim ❌).</li><li><b>Can</b> не меняется: he can, she can (не he cans ❌).</li><li><b>Can't</b> = <b>cannot</b> (одно слово).</li></ul><h2>11.4. Типичные ошибки</h2><ol><li><b>Лишнее to:</b> I can to swim ❌ → <b>I can swim</b> ✅</li><li><b>-s в 3-м лице:</b> He cans swim ❌ → <b>He can swim</b> ✅</li><li><b>Can't с -s:</b> She can't swims ❌ → <b>She can't swim</b> ✅</li></ol>"
+      ],
+      "exercises": [
+        { "type": "choice", "question": "I ___ swim.", "options": ["can", "can't", "cans"], "answer": "can" },
+        { "type": "choice", "question": "She ___ cook.", "options": ["can", "can't", "cans"], "answer": "can" },
+        { "type": "choice", "question": "He ___ drive. (отрицание)", "options": ["can", "can't", "cans"], "answer": "can't" },
+        { "type": "choice", "question": "___ you speak English?", "options": ["Can", "Can't", "Do"], "answer": "Can" },
+        { "type": "choice", "question": "___ she play the guitar?", "options": ["Can", "Can't", "Do"], "answer": "Can" },
+        { "type": "choice", "question": "We ___ cook. (отрицание)", "options": ["can", "can't", "cans"], "answer": "can't" },
+        { "type": "choice", "question": "Can you swim? — Yes, ___ .", "options": ["I can", "I can't"], "answer": "I can" },
+        { "type": "choice", "question": "Can he drive? — No, ___ .", "options": ["he can", "he can't"], "answer": "he can't" },
+        { "type": "input", "question": "Вставьте: I ___ swim. (введите can / can't)", "answer": "can" },
+        { "type": "input", "question": "Вставьте: He ___ drive. (отрицание) (введите can / can't)", "answer": "can't" },
+        { "type": "input", "question": "Составьте вопрос: you / can / speak English → ___ ?", "answer": "Can you speak English" },
+        { "type": "input", "question": "Составьте вопрос: she / can / play the guitar → ___ ?", "answer": "Can she play the guitar" },
+        { "type": "input", "question": "Исправьте ошибку: I can to swim.", "answer": "I can swim" },
+        { "type": "input", "question": "Исправьте ошибку: He cans swim.", "answer": "He can swim" },
+        { "type": "input", "question": "Переведите: Я умею плавать.", "answer": "I can swim" },
+        { "type": "input", "question": "Переведите: Она умеет готовить.", "answer": "She can cook" },
+        { "type": "input", "question": "Переведите: Он не умеет водить.", "answer": "He can't drive" },
+        { "type": "input", "question": "Переведите: Ты умеешь говорить по-английски?", "answer": "Can you speak English" },
+        { "type": "input", "question": "Заполните пропуски: I ___ swim. My sister ___ cook.", "answer": "can, can" }
+      ]
+    }
+  ]
+}

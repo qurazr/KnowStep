@@ -1,0 +1,41 @@
+{
+  "topics": [
+    {
+      "id": "a1-lesson-15",
+      "title": "Урок 15. Предлоги времени: at, on, in",
+      "theory_pages": [
+        "<h2>15.1. Зачем нужны предлоги времени</h2><p>Предлоги времени отвечают на вопрос <b>«когда?»</b> и помогают указать точное время, день или период. В английском три основных предлога времени: <b>at, on, in</b>. Выбор зависит от того, <b>насколько большой отрезок времени</b> мы называем.</p><p><b>Общая логика:</b></p><ul><li><b>at</b> — самая маленькая точка (точное время, момент).</li><li><b>on</b> — средний отрезок (день, дата).</li><li><b>in</b> — самый большой отрезок (месяц, год, век, часть дня, сезон).</li></ul><p><b>Мнемоника:</b> «at — точка, on — день, in — всё большое».</p>",
+        "<h2>15.2. Предлог at — точное время и моменты</h2><p><i>At</i> используется с <b>точным временем</b> и <b>конкретными моментами</b>:</p><table class='grammar-table'><tr><th>Что</th><th>Пример</th></tr><tr><td><b>Точное время</b></td><td><b>at</b> 7 o'clock, <b>at</b> 10:30, <b>at</b> noon, <b>at</b> midnight</td></tr><tr><td><b>Моменты дня</b></td><td><b>at</b> night, <b>at</b> lunchtime, <b>at</b> breakfast time</td></tr><tr><td><b>Выходные (BrE)</b></td><td><b>at</b> the weekend</td></tr><tr><td><b>Праздники (без даты)</b></td><td><b>at</b> Christmas, <b>at</b> Easter</td></tr><tr><td><b>Возраст</b></td><td><b>at</b> the age of 5</td></tr></table><p>Примеры: I get up <b>at</b> 7 o'clock. He works <b>at</b> night. We meet <b>at</b> lunchtime.</p><p><b>Важно:</b> <i>at night</i> — исключение. Мы говорим <i>at night</i>, но <i>in the morning / in the afternoon / in the evening</i>.</p>",
+        "<h2>15.3. Предлог on — дни и даты</h2><p><i>On</i> используется с <b>днями недели</b> и <b>датами</b>:</p><table class='grammar-table'><tr><th>Что</th><th>Пример</th></tr><tr><td><b>Дни недели</b></td><td><b>on</b> Monday, <b>on</b> Tuesday, <b>on</b> Sunday</td></tr><tr><td><b>Даты</b></td><td><b>on</b> 5 May, <b>on</b> 1 January, <b>on</b> my birthday</td></tr><tr><td><b>Конкретные дни</b></td><td><b>on</b> Monday morning, <b>on</b> Friday evening</td></tr><tr><td><b>Праздники с датой</b></td><td><b>on</b> New Year's Day</td></tr></table><p>Примеры: We have English <b>on</b> Monday. My birthday is <b>on</b> 5 May. I play football <b>on</b> Sunday.</p><p><b>Нюанс:</b> <i>on Monday morning</i> — если есть и день, и часть дня, используем <b>on</b>, потому что день важнее: <i>on Monday morning</i> ✅ (не <i>in Monday morning</i> ❌).</p>",
+        "<h2>15.4. Предлог in — месяцы, годы, части дня, сезоны</h2><p><i>In</i> используется с <b>большими отрезками времени</b>:</p><table class='grammar-table'><tr><th>Что</th><th>Пример</th></tr><tr><td><b>Месяцы</b></td><td><b>in</b> July, <b>in</b> January, <b>in</b> December</td></tr><tr><td><b>Годы</b></td><td><b>in</b> 2024, <b>in</b> 1990</td></tr><tr><td><b>Века</b></td><td><b>in</b> the 21st century</td></tr><tr><td><b>Сезоны</b></td><td><b>in</b> winter, <b>in</b> summer, <b>in</b> spring, <b>in</b> autumn</td></tr><tr><td><b>Части дня</b></td><td><b>in</b> the morning, <b>in</b> the afternoon, <b>in</b> the evening</td></tr><tr><td><b>Периоды</b></td><td><b>in</b> the past, <b>in</b> the future</td></tr></table><p>Примеры: My birthday is <b>in</b> July. He was born <b>in</b> 1990. I drink coffee <b>in</b> the morning.</p><p><b>Важно:</b> <i>in the morning / in the afternoon / in the evening</i> — с артиклем <i>the</i>. Но <i>at night</i> — без артикля.</p>",
+        "<h2>15.5. Сводная таблица</h2><table class='grammar-table'><tr><th>Предлог</th><th>С чем используется</th><th>Примеры</th></tr><tr><td><b>at</b></td><td>точное время, моменты, night, the weekend, Christmas</td><td>at 7 o'clock, at night, at the weekend, at Christmas</td></tr><tr><td><b>on</b></td><td>дни недели, даты, конкретные дни</td><td>on Monday, on 5 May, on Monday morning</td></tr><tr><td><b>in</b></td><td>месяцы, годы, века, сезоны, части дня</td><td>in July, in 2024, in winter, in the morning</td></tr></table>",
+        "<h2>15.6. Исключения и нюансы</h2><ol><li><b>at night</b> vs <b>in the morning / in the afternoon / in the evening</b> — запомните: ночь — at, остальные части дня — in с артиклем the.</li><li><b>on Monday morning</b> — если есть день недели, on важнее, чем in.</li><li><b>at the weekend</b> (BrE) vs <b>on the weekend</b> (AmE) — оба варианта правильные, но в British English чаще at.</li><li><b>at Christmas</b> (праздник в целом) vs <b>on Christmas Day</b> (конкретный день) — at для периода, on для дня.</li><li><b>in the morning</b> — с артиклем the, но <b>at noon / at midnight</b> — без артикля.</li><li><b>in 2024</b> — без артикля, <b>in the 1990s</b> — с артиклем the.</li></ol>",
+        "<h2>15.7. Типичные ошибки</h2><ol><li><b>In Monday</b> ❌ → <b>on Monday</b> ✅</li><li><b>On July</b> ❌ → <b>in July</b> ✅</li><li><b>In 7 o'clock</b> ❌ → <b>at 7 o'clock</b> ✅</li><li><b>At the morning</b> ❌ → <b>in the morning</b> ✅</li><li><b>In night</b> ❌ → <b>at night</b> ✅</li><li><b>On 2024</b> ❌ → <b>in 2024</b> ✅</li><li><b>In Monday morning</b> ❌ → <b>on Monday morning</b> ✅</li><li><b>Пропуск артикля:</b> in morning ❌ → <b>in the morning</b> ✅</li></ol>"
+      ],
+      "exercises": [
+        { "type": "choice", "question": "I get up ___ 7 o'clock.", "options": ["at", "on", "in"], "answer": "at" },
+        { "type": "choice", "question": "We have English ___ Monday.", "options": ["at", "on", "in"], "answer": "on" },
+        { "type": "choice", "question": "My birthday is ___ July.", "options": ["at", "on", "in"], "answer": "in" },
+        { "type": "choice", "question": "She drinks coffee ___ the morning.", "options": ["at", "on", "in"], "answer": "in" },
+        { "type": "choice", "question": "He works ___ night.", "options": ["at", "on", "in"], "answer": "at" },
+        { "type": "choice", "question": "They go to the park ___ Sunday.", "options": ["at", "on", "in"], "answer": "on" },
+        { "type": "choice", "question": "I was born ___ 1990.", "options": ["at", "on", "in"], "answer": "in" },
+        { "type": "choice", "question": "We meet ___ lunchtime.", "options": ["at", "on", "in"], "answer": "at" },
+        { "type": "input", "question": "Вставьте: I get up ___ 7 o'clock. (введите at / on / in)", "answer": "at" },
+        { "type": "input", "question": "Вставьте: We have English ___ Monday. (введите at / on / in)", "answer": "on" },
+        { "type": "input", "question": "Вставьте: My birthday is ___ July. (введите at / on / in)", "answer": "in" },
+        { "type": "input", "question": "Вставьте: He works ___ night. (введите at / on / in)", "answer": "at" },
+        { "type": "input", "question": "Исправьте ошибку: I get up in 7 o'clock.", "answer": "I get up at 7 o'clock" },
+        { "type": "input", "question": "Исправьте ошибку: We have English in Monday.", "answer": "We have English on Monday" },
+        { "type": "input", "question": "Исправьте ошибку: My birthday is on July.", "answer": "My birthday is in July" },
+        { "type": "input", "question": "Исправьте ошибку: She drinks coffee at the morning.", "answer": "She drinks coffee in the morning" },
+        { "type": "input", "question": "Переведите: Я встаю в 7 часов.", "answer": "I get up at 7 o'clock" },
+        { "type": "input", "question": "Переведите: У нас английский в понедельник.", "answer": "We have English on Monday" },
+        { "type": "input", "question": "Переведите: Мой день рождения в июле.", "answer": "My birthday is in July" },
+        { "type": "input", "question": "Переведите: Он работает ночью.", "answer": "He works at night" },
+        { "type": "input", "question": "Переведите: Они ходят в парк в воскресенье.", "answer": "They go to the park on Sunday" },
+        { "type": "input", "question": "Заполните пропуски: I get up ___ 7 o'clock ___ the morning. We have English ___ Monday.", "answer": "at, in, on" }
+      ]
+    }
+  ]
+}
