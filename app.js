@@ -31,6 +31,67 @@ const progress = {
   markDone(topicId) { const p = this.load(); p[topicId] = true; this.save(p); }
 };
 
+// --- ОЗВУЧКА ---
+let voices = [];
+function loadVoices() { voices = window.speechSynthesis.getVoices(); }
+window.speechSynthesis.onvoiceschanged = loadVoices;
+loadVoices();
+
+let keepAliveTimer = null;
+
+function speakText(text) {
+  if (!text) return;
+  
+  const cleanText = text.replace(/<[^>]*>?/gm, '').trim();
+  if (!cleanText) return;
+
+  // 1. Принудительно останавливаем всё, что было до этого
+  window.speechSynthesis.cancel();
+  if (keepAliveTimer) clearInterval(keepAliveTimer);
+
+  const utterance = new SpeechSynthesisUtterance(cleanText);
+  utterance.lang = 'en-US';
+  utterance.rate = 0.9;
+
+  // 2. Выбираем голос
+  const maleVoice = voices.find(v => 
+    v.name.includes('Google UK English Male') || 
+    v.name.includes('Microsoft David') || 
+    v.name.includes('Male')
+  );
+  if (maleVoice) utterance.voice = maleVoice;
+  else {
+    const anyEnglish = voices.find(v => v.lang.startsWith('en'));
+    if (anyEnglish) utterance.voice = anyEnglish;
+  }
+
+  // 3. ЗАПУСКАЕМ «ПУЛЬС» (лечит обрыв через 15 секунд)
+  keepAliveTimer = setInterval(() => {
+    if (window.speechSynthesis.speaking) {
+      window.speechSynthesis.pause();
+      window.speechSynthesis.resume();
+    } else {
+      clearInterval(keepAliveTimer);
+    }
+  }, 10000); // каждые 10 секунд
+
+  // 4. Говорим
+  window.speechSynthesis.speak(utterance);
+
+  // 5. Очищаем таймер, когда речь закончится
+  utterance.onend = () => {
+    if (keepAliveTimer) clearInterval(keepAliveTimer);
+  };
+}
+
+// --- УМНАЯ ОБЕРТКА СЛОВ ---
+function makeWordsClickable(htmlString) {
+  return htmlString.replace(/(<[^>]+>)|([A-Za-z][A-Za-z']{0,})/g, (match, tag, word) => {
+    if (tag) return tag;
+    if (word) return `<span class="clickable-word">${word}</span>`;
+  });
+}
+
 // --- НАВИГАЦИЯ ---
 function updateUI(showBack = true) {
   $navHeader.classList.toggle('hidden', !showBack);
@@ -149,7 +210,6 @@ async function goLevel(level, sub, addHistory = true) {
   } catch (e) { $main.innerHTML = '<p class="feedback err">Ошибка загрузки списка уроков.</p>'; }
 }
 
-// --- УРОК ---
 function goTopic(topic) {
   updateUI(true);
   $title.textContent = topic.title;
@@ -157,7 +217,7 @@ function goTopic(topic) {
   if (topic.theory_pages && topic.theory_pages.length > 0) {
     renderPaginatedTheory(topic);
   } else {
-    $main.innerHTML = `<div class="theory">${topic.theory || 'Теория не найдена'}</div>`;
+    $main.innerHTML = `<div class="theory">${makeWordsClickable(topic.theory || 'Теория не найдена')}</div>`;
     renderExercises(topic, $main);
   }
 }
@@ -167,13 +227,14 @@ function renderPaginatedTheory(topic) {
   const totalPages = topic.theory_pages.length;
 
   function drawPage() {
-    // Меняем структуру: сначала кнопки, потом текст страницы
+    const clickableTheory = makeWordsClickable(topic.theory_pages[currentPage]);
+
     $main.innerHTML = `
-      <div class="theory">${topic.theory_pages[currentPage]}</div>
+      <div class="theory">${clickableTheory}</div>
       <div class="theory-nav">
         <button id="prevBtn" ${currentPage === 0 ? 'disabled' : ''}>← Назад</button>
         <span>${currentPage + 1} / ${totalPages}</span>
-        <button id="nextBtn">Вперед →</button>
+        <button id="nextBtn">${currentPage === totalPages - 1 ? 'К упражнениям →' : 'Вперед →'}</button>
       </div>
       <div id="exercises-container" class="hidden"></div>
     `;
@@ -208,7 +269,7 @@ function renderExercises(topic, container) {
   topic.exercises.forEach((ex, idx) => {
     const wrap = document.createElement('div');
     wrap.className = 'exercise';
-    wrap.innerHTML = `<p>${idx + 1}. ${ex.question}</p>`;
+    wrap.innerHTML = `<p>${idx + 1}. ${makeWordsClickable(ex.question)}</p>`;
     const fb = document.createElement('div');
     fb.className = 'feedback';
 
@@ -269,6 +330,13 @@ function renderExercises(topic, container) {
     container.appendChild(wrap);
   });
 }
+
+// --- ОБРАБОТЧИК КЛИКА ПО СЛОВАМ ---
+document.addEventListener('click', (e) => {
+  if (e.target.classList.contains('clickable-word')) {
+    speakText(e.target.textContent);
+  }
+});
 
 // Запуск приложения
 goHome();

@@ -330,3 +330,12 @@ input[type="text"]:focus {
   padding: 10px;
   text-align: left;
 }
+
+.clickable-word {
+  cursor: pointer;
+  border-bottom: 1px dashed #2481cc;
+  transition: background-color 0.2s;
+}
+.clickable-word:hover {
+  background-color: rgba(36, 129, 204, 0.1);
+}
