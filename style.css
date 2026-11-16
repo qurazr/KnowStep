@@ -281,13 +281,34 @@ input[type="text"]:focus {
 .theory-nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-top: 20px;
+  margin-bottom: 20px;
+  gap: 12px; /* Добавляет отступ между кнопками и текстом */
+  flex-wrap: wrap; /* Если не влезает в одну строку, перенесет на следующую */
 }
+
 .theory-nav button {
-  padding: 8px 16px;
+  padding: 10px 16px;
   border-radius: 8px;
   border: none;
   background: var(--primary-color);
   color: white;
+  font-weight: 600;
   cursor: pointer;
+  font-size: 14px; /* Чуть меньше шрифт, чтобы влезало */
+  flex: 1; /* Кнопки растягиваются равномерно */
+  max-width: 45%; /* Ограничивает ширину кнопки, чтобы текст между ними было видно */
+  text-align: center;
+}
+
+.theory-nav button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.theory-nav span {
+  font-size: 14px;
+  color: var(--text-color);
+  white-space: nowrap; /* Запрещает перенос текста "Страница 5 из 5" */
 }
