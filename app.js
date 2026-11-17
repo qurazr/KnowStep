@@ -8,7 +8,6 @@ const $title = document.getElementById('title');
 const $backBtn = document.getElementById('backBtn');
 const $navHeader = document.getElementById('nav-header');
 
-// --- АВТОРИЗАЦИЯ (Заглушка) ---
 function handleCredentialResponse(response) {
   const payload = JSON.parse(atob(response.credential.split('.')[1]));
   document.getElementById('user-avatar').src = payload.picture;
@@ -23,7 +22,6 @@ document.getElementById('logoutBtn').onclick = () => {
   document.getElementById('loginBtn').style.display = 'block';
 };
 
-// --- ПРОГРЕСС ---
 const progress = {
   load() { try { return JSON.parse(localStorage.getItem('knowstep_progress') || '{}'); } catch { return {}; } },
   save(p) { localStorage.setItem('knowstep_progress', JSON.stringify(p)); },
@@ -31,7 +29,6 @@ const progress = {
   markDone(topicId) { const p = this.load(); p[topicId] = true; this.save(p); }
 };
 
-// --- ОЗВУЧКА ---
 let voices = [];
 function loadVoices() { voices = window.speechSynthesis.getVoices(); }
 window.speechSynthesis.onvoiceschanged = loadVoices;
@@ -45,7 +42,6 @@ function speakText(text) {
   const cleanText = text.replace(/<[^>]*>?/gm, '').trim();
   if (!cleanText) return;
 
-  // 1. Принудительно останавливаем всё, что было до этого
   window.speechSynthesis.cancel();
   if (keepAliveTimer) clearInterval(keepAliveTimer);
 
@@ -53,21 +49,18 @@ function speakText(text) {
   utterance.lang = 'en-US';
   utterance.rate = 0.9;
 
-    // 1. Пытаемся найти мужской голос (Windows)
   let selectedVoice = voices.find(v => 
     v.name.includes('Google UK English Male') || 
     v.name.includes('Microsoft David') || 
     v.name.includes('Male')
   );
 
-  // 2. Если мужского нет (например, на Android), ищем любой английский голос Google
   if (!selectedVoice) {
     selectedVoice = voices.find(v => 
       v.lang.startsWith('en') && v.name.includes('Google')
     );
   }
 
-  // 3. Если и такого нет, берем просто первый английский
   if (!selectedVoice) {
     selectedVoice = voices.find(v => v.lang.startsWith('en'));
   }
@@ -76,7 +69,6 @@ function speakText(text) {
     utterance.voice = selectedVoice;
   }
 
-  // 3. ЗАПУСКАЕМ «ПУЛЬС» (лечит обрыв через 15 секунд)
   keepAliveTimer = setInterval(() => {
     if (window.speechSynthesis.speaking) {
       window.speechSynthesis.pause();
@@ -84,18 +76,15 @@ function speakText(text) {
     } else {
       clearInterval(keepAliveTimer);
     }
-  }, 10000); // каждые 10 секунд
+  }, 10000);
 
-  // 4. Говорим
   window.speechSynthesis.speak(utterance);
 
-  // 5. Очищаем таймер, когда речь закончится
   utterance.onend = () => {
     if (keepAliveTimer) clearInterval(keepAliveTimer);
   };
 }
 
-// --- УМНАЯ ОБЕРТКА СЛОВ ---
 function makeWordsClickable(htmlString) {
   return htmlString.replace(/(<[^>]+>)|([A-Za-z][A-Za-z']{0,})/g, (match, tag, word) => {
     if (tag) return tag;
@@ -103,7 +92,6 @@ function makeWordsClickable(htmlString) {
   });
 }
 
-// --- НАВИГАЦИЯ ---
 function updateUI(showBack = true) {
   $navHeader.classList.toggle('hidden', !showBack);
 }
@@ -118,7 +106,6 @@ $backBtn.onclick = () => {
   }
 };
 
-// --- ЭКРАНЫ ---
 async function goHome(addHistory = true) {
   if (addHistory) state.history = [];
   updateUI(false);
@@ -342,12 +329,10 @@ function renderExercises(topic, container) {
   });
 }
 
-// --- ОБРАБОТЧИК КЛИКА ПО СЛОВАМ ---
 document.addEventListener('click', (e) => {
   if (e.target.classList.contains('clickable-word')) {
     speakText(e.target.textContent);
   }
 });
 
-// Запуск приложения
 goHome();
