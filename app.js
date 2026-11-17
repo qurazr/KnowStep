@@ -1,6 +1,5 @@
 const state = { 
-  categories: [], subjects: [], levels: [], topics: [], 
-  history: []
+  levels: [], topics: [], history: [], currentUser: null
 };
 
 const $main = document.getElementById('main');
@@ -8,30 +7,71 @@ const $title = document.getElementById('title');
 const $backBtn = document.getElementById('backBtn');
 const $navHeader = document.getElementById('nav-header');
 
-// --- АВТОРИЗАЦИЯ (Заглушка) ---
 function handleCredentialResponse(response) {
   const payload = JSON.parse(atob(response.credential.split('.')[1]));
+  state.currentUser = payload.sub; 
+  localStorage.setItem('knowstep_user', JSON.stringify({
+    id: payload.sub,
+    name: payload.name,
+    picture: payload.picture
+  }));
   document.getElementById('user-avatar').src = payload.picture;
   document.getElementById('user-profile').classList.remove('hidden');
   document.getElementById('loginBtn').style.display = 'none';
-  alert(`Привет, ${payload.name}!`);
+  goHome(false);
 }
 
-document.getElementById('loginBtn').onclick = () => alert("Авторизация отключена для теста.");
+function checkAuth() {
+  const savedUser = localStorage.getItem('knowstep_user');
+  if (savedUser) {
+    const user = JSON.parse(savedUser);
+    state.currentUser = user.id;
+    document.getElementById('user-avatar').src = user.picture;
+    document.getElementById('user-profile').classList.remove('hidden');
+    document.getElementById('loginBtn').style.display = 'none';
+  }
+}
+
+document.getElementById('loginBtn').onclick = () => {
+  alert("Кнопка Google не загрузилась. Проверьте Client ID.");
+};
+
 document.getElementById('logoutBtn').onclick = () => {
+  localStorage.removeItem('knowstep_user');
+  state.currentUser = null;
   document.getElementById('user-profile').classList.add('hidden');
   document.getElementById('loginBtn').style.display = 'block';
+  goHome(false);
 };
 
-// --- ПРОГРЕСС ---
-const progress = {
-  load() { try { return JSON.parse(localStorage.getItem('knowstep_progress') || '{}'); } catch { return {}; } },
-  save(p) { localStorage.setItem('knowstep_progress', JSON.stringify(p)); },
-  isDone(topicId) { return !!this.load()[topicId]; },
-  markDone(topicId) { const p = this.load(); p[topicId] = true; this.save(p); }
+const db = {
+  key: 'knowstep_db',
+  loadAll() { try { return JSON.parse(localStorage.getItem(this.key) || '{}'); } catch { return {}; } },
+  saveAll(data) { localStorage.setItem(this.key, JSON.stringify(data)); },
+  getUserProgress(userId) {
+    if (!userId) return {};
+    const all = this.loadAll();
+    return all[userId] || {};
+  },
+  saveUserProgress(userId, progress) {
+    if (!userId) return;
+    const all = this.loadAll();
+    all[userId] = progress;
+    this.saveAll(all);
+  },
+  markDone(userId, topicId) {
+    if (!userId) return;
+    const progress = this.getUserProgress(userId);
+    progress[topicId] = true;
+    this.saveUserProgress(userId, progress);
+  },
+  isDone(userId, topicId) {
+    if (!userId) return false;
+    const progress = this.getUserProgress(userId);
+    return !!progress[topicId];
+  }
 };
 
-// --- ОЗВУЧКА ---
 let voices = [];
 function loadVoices() { voices = window.speechSynthesis.getVoices(); }
 window.speechSynthesis.onvoiceschanged = loadVoices;
@@ -41,35 +81,25 @@ let keepAliveTimer = null;
 
 function speakText(text) {
   if (!text) return;
-  
   const cleanText = text.replace(/<[^>]*>?/gm, '').trim();
   if (!cleanText) return;
-
   window.speechSynthesis.cancel();
   if (keepAliveTimer) clearInterval(keepAliveTimer);
-
   const utterance = new SpeechSynthesisUtterance(cleanText);
   utterance.lang = 'en-US';
   utterance.rate = 0.9;
-
-  // Ищем мужской голос
   let selectedVoice = voices.find(v => 
     v.name.includes('Google UK English Male') || 
     v.name.includes('Microsoft David') || 
     v.name.includes('Male')
   );
-
   if (!selectedVoice) {
     selectedVoice = voices.find(v => v.lang.startsWith('en') && v.name.includes('Google'));
   }
   if (!selectedVoice) {
     selectedVoice = voices.find(v => v.lang.startsWith('en'));
   }
-
-  if (selectedVoice) {
-    utterance.voice = selectedVoice;
-  }
-
+  if (selectedVoice) utterance.voice = selectedVoice;
   keepAliveTimer = setInterval(() => {
     if (window.speechSynthesis.speaking) {
       window.speechSynthesis.pause();
@@ -78,22 +108,15 @@ function speakText(text) {
       clearInterval(keepAliveTimer);
     }
   }, 10000);
-
   window.speechSynthesis.speak(utterance);
-
-  utterance.onend = () => {
-    if (keepAliveTimer) clearInterval(keepAliveTimer);
-  };
+  utterance.onend = () => { if (keepAliveTimer) clearInterval(keepAliveTimer); };
 }
 
-// --- ФУНКЦИЯ НОРМАЛИЗАЦИИ КАВЫЧЕК ---
 function normalizeQuotes(text) {
   if (!text) return '';
-  // Заменяем все виды апострофов на обычный прямой '
   return text.replace(/[’‘`´]/g, "'");
 }
 
-// --- УМНАЯ ОБЕРТКА СЛОВ ---
 function makeWordsClickable(htmlString) {
   return htmlString.replace(/(<[^>]+>)|([A-Za-z][A-Za-z']{0,})/g, (match, tag, word) => {
     if (tag) return tag;
@@ -101,7 +124,6 @@ function makeWordsClickable(htmlString) {
   });
 }
 
-// --- НАВИГАЦИЯ ---
 function updateUI(showBack = true) {
   $navHeader.classList.toggle('hidden', !showBack);
 }
@@ -109,83 +131,38 @@ function updateUI(showBack = true) {
 $backBtn.onclick = () => {
   const prev = state.history.pop();
   if (prev) {
-    if (prev.type === 'category') goCategory(prev.data, false);
-    else if (prev.type === 'subject') goSubject(prev.data, false);
-    else if (prev.type === 'level') goLevel(prev.data.level, prev.data.sub, false);
+    if (prev.type === 'level') goLevel(prev.data.level, false);
     else goHome(false);
   }
 };
 
-// --- ЭКРАНЫ ---
 async function goHome(addHistory = true) {
   if (addHistory) state.history = [];
   updateUI(false);
-  $main.innerHTML = '<p class="stats">Выберите категорию:</p>';
+  $main.innerHTML = '<p class="stats">Выберите уровень:</p>';
   
   try {
-    const res = await fetch('data/categories.json');
-    const data = await res.json();
-    state.categories = data.categories;
-    
-    data.categories.forEach((cat) => {
-      const card = document.createElement('div');
-      card.className = 'card';
-      card.innerHTML = `<div><h2>${cat.title}</h2></div><div style="font-size:20px;">→</div>`;
-      card.onclick = () => { if(addHistory) state.history.push({type: 'home'}); goCategory(cat); };
-      $main.appendChild(card);
-    });
-  } catch (e) { $main.innerHTML = '<p class="feedback err">Ошибка загрузки категорий.</p>'; }
-}
-
-async function goCategory(cat, addHistory = true) {
-  updateUI(true);
-  $title.textContent = cat.title;
-  $main.innerHTML = '<p class="stats">Загрузка...</p>';
-  
-  try {
-    const res = await fetch(`data/${cat.file}`);
-    const data = await res.json();
-    state.subjects = data.subjects || [];
-    $main.innerHTML = '';
-    
-    state.subjects.forEach(sub => {
-      const card = document.createElement('div');
-      card.className = 'card';
-      card.innerHTML = `<div><h2>${sub.title}</h2></div><div style="font-size:20px;">→</div>`;
-      card.onclick = () => { if(addHistory) state.history.push({type: 'category', data: cat}); goSubject(sub); };
-      $main.appendChild(card);
-    });
-  } catch (e) { $main.innerHTML = '<p class="feedback err">Ошибка загрузки предметов.</p>'; }
-}
-
-async function goSubject(sub, addHistory = true) {
-  updateUI(true);
-  $title.textContent = sub.title;
-  $main.innerHTML = '<p class="stats">Загрузка...</p>';
-  
-  try {
-    const res = await fetch(`data/${sub.folder}/syllabus.json`);
+    const res = await fetch('data/english/syllabus.json');
     const data = await res.json();
     state.levels = data.levels || [];
-    $main.innerHTML = '';
     
-    state.levels.forEach(level => {
+    state.levels.forEach((level) => {
       const card = document.createElement('div');
       card.className = 'card';
       card.innerHTML = `<div><h2>${level.title}</h2></div><div style="font-size:20px;">→</div>`;
-      card.onclick = () => { if(addHistory) state.history.push({type: 'subject', data: sub}); goLevel(level, sub); };
+      card.onclick = () => { if(addHistory) state.history.push({type: 'home'}); goLevel(level); };
       $main.appendChild(card);
     });
   } catch (e) { $main.innerHTML = '<p class="feedback err">Ошибка загрузки уровней.</p>'; }
 }
 
-async function goLevel(level, sub, addHistory = true) {
+async function goLevel(level, addHistory = true) {
   updateUI(true);
   $title.textContent = level.title;
   $main.innerHTML = '<p class="stats">Загрузка...</p>';
   
   try {
-    const res = await fetch(`data/${sub.folder}/${level.file}`);
+    const res = await fetch(`data/english/${level.file}`);
     const data = await res.json();
     state.topics = data.topics || []; 
     $main.innerHTML = '';
@@ -196,7 +173,7 @@ async function goLevel(level, sub, addHistory = true) {
     }
 
     state.topics.forEach((topic) => {
-      const done = progress.isDone(topic.id);
+      const done = db.isDone(state.currentUser, topic.id);
       const card = document.createElement('div');
       card.className = 'card';
       card.innerHTML = `<div><h2>${topic.title}</h2></div><div style="font-size:20px;">${done ? '✓' : '→'}</div>`;
@@ -204,11 +181,10 @@ async function goLevel(level, sub, addHistory = true) {
       card.onclick = async () => {
         $main.innerHTML = '<p class="stats">Загрузка урока...</p>';
         try {
-          const lessonRes = await fetch(`data/${sub.folder}/${topic.file}`);
+          const lessonRes = await fetch(`data/english/${topic.file}`);
           const lessonData = await lessonRes.json();
           const fullTopic = lessonData.topics[0]; 
-          
-          if(addHistory) state.history.push({type: 'level', data: {level, sub}});
+          if(addHistory) state.history.push({type: 'level', data: {level}});
           goTopic(fullTopic);
         } catch (e) {
           $main.innerHTML = '<p class="feedback err">Ошибка загрузки урока.</p>';
@@ -216,13 +192,12 @@ async function goLevel(level, sub, addHistory = true) {
       };
       $main.appendChild(card);
     });
-  } catch (e) { $main.innerHTML = '<p class="feedback err">Ошибка загрузки списка уроков.</p>'; }
+  } catch (e) { $main.innerHTML = '<p class="feedback err">Ошибка загрузки уроков.</p>'; }
 }
 
 function goTopic(topic) {
   updateUI(true);
   $title.textContent = topic.title;
-  
   if (topic.theory_pages && topic.theory_pages.length > 0) {
     renderPaginatedTheory(topic);
   } else {
@@ -237,7 +212,6 @@ function renderPaginatedTheory(topic) {
 
   function drawPage() {
     const clickableTheory = makeWordsClickable(topic.theory_pages[currentPage]);
-
     $main.innerHTML = `
       <div class="theory">${clickableTheory}</div>
       <div class="theory-nav">
@@ -247,11 +221,9 @@ function renderPaginatedTheory(topic) {
       </div>
       <div id="exercises-container" class="hidden"></div>
     `;
-
     document.getElementById('prevBtn').onclick = () => { 
       if (currentPage > 0) { currentPage--; drawPage(); } 
     };
-    
     document.getElementById('nextBtn').onclick = () => { 
       if (currentPage < totalPages - 1) { 
         currentPage++; 
@@ -259,10 +231,8 @@ function renderPaginatedTheory(topic) {
       } else {
         document.querySelector('.theory').classList.add('hidden');
         document.querySelector('.theory-nav').classList.add('hidden');
-        
         const exContainer = document.getElementById('exercises-container');
         exContainer.classList.remove('hidden');
-        
         if (!exContainer.hasChildNodes()) {
           renderExercises(topic, exContainer);
         }
@@ -284,7 +254,7 @@ function renderExercises(topic, container) {
 
     const checkFinish = () => {
       if (correctCount === topic.exercises.length) {
-        progress.markDone(topic.id);
+        db.markDone(state.currentUser, topic.id);
         container.innerHTML += '<p class="feedback ok" style="margin-top:20px; font-size:18px; text-align:center;">✓ Урок пройден!</p>';
       }
     };
@@ -317,18 +287,14 @@ function renderExercises(topic, container) {
       input.type = 'text';
       input.placeholder = 'Введите ответ';
       wrap.appendChild(input);
-      
       const btn = document.createElement('button');
       btn.className = 'btn';
       btn.textContent = 'Проверить';
       btn.onclick = () => {
         if (input.disabled) return;
         input.disabled = true; btn.disabled = true;
-        
-        // ИСПОЛЬЗУЕМ НОРМАЛИЗАЦИЮ КАВЫЧЕК
         const val = normalizeQuotes(input.value.trim().toLowerCase());
         const answer = normalizeQuotes(String(ex.answer).toLowerCase());
-        
         if (val === answer) {
           fb.className = 'feedback ok'; fb.textContent = 'Верно';
           correctCount++;
@@ -344,12 +310,11 @@ function renderExercises(topic, container) {
   });
 }
 
-// --- ОБРАБОТЧИК КЛИКА ПО СЛОВАМ ---
 document.addEventListener('click', (e) => {
   if (e.target.classList.contains('clickable-word')) {
     speakText(e.target.textContent);
   }
 });
 
-// Запуск приложения
+checkAuth();
 goHome();

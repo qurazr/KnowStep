@@ -5,25 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>KnowStep — Твой путь к знаниям</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
 </head>
 <body>
   <header class="site-header">
     <div class="logo" onclick="goHome()">KnowStep</div>
+    
     <div id="user-profile" class="hidden">
       <img id="user-avatar" src="" alt="Avatar">
       <button id="logoutBtn" class="login-btn" style="background:#ef4444; margin-left:10px;">Выйти</button>
     </div>
-    <button id="loginBtn" class="login-btn">Войти</button>
+
+    <div id="g_id_onload"
+         data-client_id="867737386569-6paacn9ahhjs3nha8qvhgp4urna8eh5k.apps.googleusercontent.com"
+         data-callback="handleCredentialResponse"
+         data-auto_prompt="false">
+    </div>
+    <div class="g_id_signin" data-type="standard" data-size="large" data-theme="outline" data-text="signin_with" data-shape="rectangular"></div>
+    
+    <button id="loginBtn" class="login-btn" style="display:none;">Войти</button>
   </header>
+
   <main id="app">
     <div id="nav-header" class="hidden">
       <button id="backBtn" class="back">←</button>
       <h1 id="title"></h1>
     </div>
-    <div id="main">
-    </div>
+    <div id="main"></div>
   </main>
+
   <footer class="site-footer">
     <p>2026 KnowStep</p>
   </footer>
