@@ -1,11 +1,14 @@
 const state = { 
-  levels: [], topics: [], history: [], currentUser: null
+  languages: [], levels: [], topics: [], history: [], currentUser: null
 };
 
 const $main = document.getElementById('main');
 const $title = document.getElementById('title');
 const $backBtn = document.getElementById('backBtn');
 const $navHeader = document.getElementById('nav-header');
+const $googleWidget = document.querySelector('.g_id_signin');
+const $loginBtn = document.getElementById('loginBtn');
+const $userProfile = document.getElementById('user-profile');
 
 function handleCredentialResponse(response) {
   const payload = JSON.parse(atob(response.credential.split('.')[1]));
@@ -15,10 +18,12 @@ function handleCredentialResponse(response) {
     name: payload.name,
     picture: payload.picture
   }));
+  
   document.getElementById('user-avatar').src = payload.picture;
-  document.getElementById('user-profile').classList.remove('hidden');
-  document.getElementById('loginBtn').style.display = 'none';
-  document.querySelector('.g_id_signin').style.display = 'none';
+  $userProfile.classList.remove('hidden');
+  $loginBtn.style.display = 'none';
+  if ($googleWidget) $googleWidget.style.display = 'none';
+  
   goHome(false);
 }
 
@@ -28,20 +33,22 @@ function checkAuth() {
     const user = JSON.parse(savedUser);
     state.currentUser = user.id;
     document.getElementById('user-avatar').src = user.picture;
-    document.getElementById('user-profile').classList.remove('hidden');
-    document.getElementById('loginBtn').style.display = 'none';
+    $userProfile.classList.remove('hidden');
+    $loginBtn.style.display = 'none';
+    if ($googleWidget) $googleWidget.style.display = 'none';
   }
 }
 
-document.getElementById('loginBtn').onclick = () => {
+$loginBtn.onclick = () => {
   alert("Кнопка Google не загрузилась. Проверьте Client ID.");
 };
 
 document.getElementById('logoutBtn').onclick = () => {
   localStorage.removeItem('knowstep_user');
   state.currentUser = null;
-  document.getElementById('user-profile').classList.add('hidden');
-  document.getElementById('loginBtn').style.display = 'block';
+  $userProfile.classList.add('hidden');
+  $loginBtn.style.display = 'block';
+  if ($googleWidget) $googleWidget.style.display = 'block';
   goHome(false);
 };
 
@@ -132,7 +139,8 @@ function updateUI(showBack = true) {
 $backBtn.onclick = () => {
   const prev = state.history.pop();
   if (prev) {
-    if (prev.type === 'level') goLevel(prev.data.level, false);
+    if (prev.type === 'level') goLevel(prev.data.language, false);
+    else if (prev.type === 'language') goHome(false);
     else goHome(false);
   }
 };
@@ -140,60 +148,91 @@ $backBtn.onclick = () => {
 async function goHome(addHistory = true) {
   if (addHistory) state.history = [];
   updateUI(false);
-  $main.innerHTML = '<p class="stats">Выберите уровень:</p>';
+  $main.innerHTML = '<p class="stats">Выберите язык:</p>';
   
   try {
-    const res = await fetch('data/english/syllabus.json');
+    const res = await fetch('data/languages.json');
     const data = await res.json();
-    state.levels = data.levels || [];
+    state.languages = data.languages || [];
     
+    state.languages.forEach((lang) => {
+      const card = document.createElement('div');
+      card.className = 'card';
+      card.innerHTML = `<div><h2>${lang.title}</h2></div><div style="font-size:20px;">→</div>`;
+      card.onclick = () => { if(addHistory) state.history.push({type: 'home'}); goLevel(lang); };
+      $main.appendChild(card);
+    });
+  } catch (e) { $main.innerHTML = '<p class="feedback err">Ошибка загрузки языков.</p>'; }
+}
+
+async function goLevel(language, addHistory = true) {
+  updateUI(true);
+  $title.textContent = language.title;
+  $main.innerHTML = '<p class="stats">Загрузка...</p>';
+  
+  try {
+    const res = await fetch(`data/${language.folder}/syllabus.json`);
+    const data = await res.json();
+    state.levels = data.levels || []; 
+    $main.innerHTML = '';
+    
+    if (!state.levels.length) {
+      $main.innerHTML = '<p class="stats">Уровней пока нет</p>';
+      return;
+    }
+
     state.levels.forEach((level) => {
       const card = document.createElement('div');
       card.className = 'card';
       card.innerHTML = `<div><h2>${level.title}</h2></div><div style="font-size:20px;">→</div>`;
-      card.onclick = () => { if(addHistory) state.history.push({type: 'home'}); goLevel(level); };
+      
+      card.onclick = async () => {
+        $main.innerHTML = '<p class="stats">Загрузка уроков...</p>';
+        try {
+          const levelRes = await fetch(`data/${language.folder}/${level.file}`);
+          const levelData = await levelRes.json();
+          state.topics = levelData.topics || [];
+          
+          if(addHistory) state.history.push({type: 'language', data: {language}});
+          renderTopics(level, language);
+        } catch (e) {
+          $main.innerHTML = '<p class="feedback err">Ошибка загрузки уроков.</p>';
+        }
+      };
       $main.appendChild(card);
     });
   } catch (e) { $main.innerHTML = '<p class="feedback err">Ошибка загрузки уровней.</p>'; }
 }
 
-async function goLevel(level, addHistory = true) {
-  updateUI(true);
+function renderTopics(level, language) {
   $title.textContent = level.title;
-  $main.innerHTML = '<p class="stats">Загрузка...</p>';
+  $main.innerHTML = '';
   
-  try {
-    const res = await fetch(`data/english/${level.file}`);
-    const data = await res.json();
-    state.topics = data.topics || []; 
-    $main.innerHTML = '';
-    
-    if (!state.topics.length) {
-      $main.innerHTML = '<p class="stats">Уроков пока нет</p>';
-      return;
-    }
+  if (!state.topics.length) {
+    $main.innerHTML = '<p class="stats">Уроков пока нет</p>';
+    return;
+  }
 
-    state.topics.forEach((topic) => {
-      const done = db.isDone(state.currentUser, topic.id);
-      const card = document.createElement('div');
-      card.className = 'card';
-      card.innerHTML = `<div><h2>${topic.title}</h2></div><div style="font-size:20px;">${done ? '✓' : '→'}</div>`;
-      
-      card.onclick = async () => {
-        $main.innerHTML = '<p class="stats">Загрузка урока...</p>';
-        try {
-          const lessonRes = await fetch(`data/english/${topic.file}`);
-          const lessonData = await lessonRes.json();
-          const fullTopic = lessonData.topics[0]; 
-          if(addHistory) state.history.push({type: 'level', data: {level}});
-          goTopic(fullTopic);
-        } catch (e) {
-          $main.innerHTML = '<p class="feedback err">Ошибка загрузки урока.</p>';
-        }
-      };
-      $main.appendChild(card);
-    });
-  } catch (e) { $main.innerHTML = '<p class="feedback err">Ошибка загрузки уроков.</p>'; }
+  state.topics.forEach((topic) => {
+    const done = db.isDone(state.currentUser, topic.id);
+    const card = document.createElement('div');
+    card.className = 'card';
+    card.innerHTML = `<div><h2>${topic.title}</h2></div><div style="font-size:20px;">${done ? '✓' : '→'}</div>`;
+    
+    card.onclick = async () => {
+      $main.innerHTML = '<p class="stats">Загрузка урока...</p>';
+      try {
+        const lessonRes = await fetch(`data/${language.folder}/${topic.file}`);
+        const lessonData = await lessonRes.json();
+        const fullTopic = lessonData.topics[0]; 
+        if(addHistory) state.history.push({type: 'level', data: {language, level}});
+        goTopic(fullTopic);
+      } catch (e) {
+        $main.innerHTML = '<p class="feedback err">Ошибка загрузки урока.</p>';
+      }
+    };
+    $main.appendChild(card);
+  });
 }
 
 function goTopic(topic) {
