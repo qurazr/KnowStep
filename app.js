@@ -18,6 +18,7 @@ function handleCredentialResponse(response) {
   document.getElementById('user-avatar').src = payload.picture;
   document.getElementById('user-profile').classList.remove('hidden');
   document.getElementById('loginBtn').style.display = 'none';
+  document.querySelector('.g_id_signin').style.display = 'none';
   goHome(false);
 }
 
