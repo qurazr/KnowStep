@@ -11,22 +11,18 @@ const $loginBtn = document.getElementById('loginBtn');
 const $userProfile = document.getElementById('user-profile');
 
 function hideGoogleWidget() {
-  const gWidget = document.querySelector('.g_id_signin');
-  if (gWidget) {
-    gWidget.style.setProperty('display', 'none', 'important');
-    gWidget.style.setProperty('visibility', 'hidden', 'important');
-    gWidget.style.setProperty('height', '0', 'important');
-    gWidget.style.setProperty('margin', '0', 'important');
-    gWidget.style.setProperty('padding', '0', 'important');
+  if ($googleWidget) {
+    $googleWidget.style.setProperty('display', 'none', 'important');
+    $googleWidget.style.setProperty('visibility', 'hidden', 'important');
+    $googleWidget.style.setProperty('height', '0', 'important');
   }
 }
 
 function showGoogleWidget() {
-  const gWidget = document.querySelector('.g_id_signin');
-  if (gWidget) {
-    gWidget.style.setProperty('display', 'block', 'important');
-    gWidget.style.setProperty('visibility', 'visible', 'important');
-    gWidget.style.setProperty('height', 'auto', 'important');
+  if ($googleWidget) {
+    $googleWidget.style.setProperty('display', 'block', 'important');
+    $googleWidget.style.setProperty('visibility', 'visible', 'important');
+    $googleWidget.style.setProperty('height', 'auto', 'important');
   }
 }
 
@@ -38,7 +34,6 @@ function handleCredentialResponse(response) {
     name: payload.name,
     picture: payload.picture
   }));
-  
   document.getElementById('user-avatar').src = payload.picture;
   $userProfile.classList.remove('hidden');
   $loginBtn.style.display = 'none';
@@ -55,6 +50,10 @@ function checkAuth() {
     $userProfile.classList.remove('hidden');
     $loginBtn.style.display = 'none';
     hideGoogleWidget();
+  } else {
+    $userProfile.classList.add('hidden');
+    $loginBtn.style.display = 'block';
+    showGoogleWidget();
   }
 }
 
@@ -159,7 +158,6 @@ $backBtn.onclick = () => {
   const prev = state.history.pop();
   if (prev) {
     if (prev.type === 'level') goLevel(prev.data.language, false);
-    else if (prev.type === 'language') goHome(false);
     else goHome(false);
   }
 };
@@ -211,7 +209,6 @@ async function goLevel(language, addHistory = true) {
           const levelRes = await fetch(`data/${language.folder}/${level.file}`);
           const levelData = await levelRes.json();
           state.topics = levelData.topics || [];
-          
           if(addHistory) state.history.push({type: 'language', data: {language}});
           renderTopics(level, language);
         } catch (e) {
