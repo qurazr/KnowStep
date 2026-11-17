@@ -9,22 +9,22 @@
 </head>
 <body>
   <header class="site-header">
-    <div class="logo" onclick="goHome()">KnowStep</div>
-    
-    <div id="user-profile" class="hidden">
-      <img id="user-avatar" src="" alt="Avatar">
-      <button id="logoutBtn" class="login-btn" style="background:#ef4444; margin-left:10px;">Выйти</button>
-    </div>
+  <div class="logo" onclick="goHome()">KnowStep</div>
+  
+  <div id="user-profile" class="hidden">
+    <img id="user-avatar" src="" alt="Avatar">
+    <button id="logoutBtn">Выйти</button>
+  </div>
 
-    <div id="g_id_onload"
-         data-client_id="867737386569-6paacn9ahhjs3nha8qvhgp4urna8eh5k.apps.googleusercontent.com"
-         data-callback="handleCredentialResponse"
-         data-auto_prompt="false">
-    </div>
-    <div class="g_id_signin" data-type="standard" data-size="large" data-theme="outline" data-text="signin_with" data-shape="rectangular"></div>
-    
-    <button id="loginBtn" class="login-btn" style="display:none;">Войти</button>
-  </header>
+  <div id="g_id_onload"
+       data-client_id="867737386569-6paacn9ahhjs3nha8qvhgp4urna8eh5k.apps.googleusercontent.com"
+       data-callback="handleCredentialResponse"
+       data-auto_prompt="false">
+  </div>
+  <div class="g_id_signin" data-type="standard" data-size="large" data-theme="outline" data-text="signin_with" data-shape="rectangular"></div>
+  
+  <button id="loginBtn" class="login-btn" style="display:none;">Войти</button>
+</header>
 
   <main id="app">
     <div id="nav-header" class="hidden">
