@@ -7,37 +7,8 @@ const $main = document.getElementById('main');
 const $title = document.getElementById('title');
 const $backBtn = document.getElementById('backBtn');
 const $navHeader = document.getElementById('nav-header');
-const $googleWidget = document.querySelector('.g_id_signin');
 const $loginBtn = document.getElementById('loginBtn');
 const $userProfile = document.getElementById('user-profile');
-
-function hideGoogleWidget() {
-  if ($googleWidget) {
-    $googleWidget.style.setProperty('display', 'none', 'important');
-    $googleWidget.style.setProperty('visibility', 'hidden', 'important');
-    $googleWidget.style.setProperty('height', '0', 'important');
-  }
-}
-function showGoogleWidget() {
-  if ($googleWidget) {
-    $googleWidget.style.setProperty('display', 'block', 'important');
-    $googleWidget.style.setProperty('visibility', 'visible', 'important');
-    $googleWidget.style.setProperty('height', 'auto', 'important');
-  }
-}
-
-function handleCredentialResponse(response) {
-  const payload = JSON.parse(atob(response.credential.split('.')[1]));
-  state.currentUser = payload.sub;
-  localStorage.setItem('knowstep_user', JSON.stringify({
-    id: payload.sub, name: payload.name, picture: payload.picture
-  }));
-  document.getElementById('user-avatar').src = payload.picture;
-  $userProfile.classList.remove('hidden');
-  $loginBtn.style.display = 'none';
-  hideGoogleWidget();
-  goHome(false);
-}
 
 function checkAuth() {
   const savedUser = localStorage.getItem('knowstep_user');
@@ -47,22 +18,19 @@ function checkAuth() {
     document.getElementById('user-avatar').src = user.picture;
     $userProfile.classList.remove('hidden');
     $loginBtn.style.display = 'none';
-    hideGoogleWidget();
   } else {
     $userProfile.classList.add('hidden');
     $loginBtn.style.display = 'block';
-    showGoogleWidget();
   }
 }
 
-$loginBtn.onclick = () => alert("Кнопка Google не загрузилась. Проверьте Client ID.");
+$loginBtn.onclick = () => alert("Авторизация пока недоступна.");
 
 document.getElementById('logoutBtn').onclick = () => {
   localStorage.removeItem('knowstep_user');
   state.currentUser = null;
   $userProfile.classList.add('hidden');
   $loginBtn.style.display = 'block';
-  showGoogleWidget();
   goHome(false);
 };
 
@@ -144,7 +112,7 @@ function updateUI(showBack = true) {
   $navHeader.classList.toggle('hidden', !showBack);
 }
 
-// ✅ ИСПРАВЛЕНО: корректная навигация "назад" с учётом типов 'topics' / 'levels' / 'home'
+// Корректная навигация "назад" с учётом типов 'topics' / 'levels' / 'home'
 $backBtn.onclick = () => {
   const prev = state.history.pop();
   if (!prev) return;
@@ -164,7 +132,7 @@ async function goHome(addHistory = true) {
   try {
     const res = await fetch('data/languages.json');
     const data = await res.json();
-    // ✅ ИСПРАВЛЕНО: в JSON ключ "subjects", а не "languages"
+    // В JSON ключ "subjects", а не "languages"
     state.languages = data.subjects || [];
     state.languages.forEach((lang) => {
       const card = document.createElement('div');
@@ -206,7 +174,7 @@ async function goLevel(language, addHistory = true) {
           const levelRes = await fetch(`data/${language.folder}/${level.file}`);
           const levelData = await levelRes.json();
           state.topics = levelData.topics || [];
-          // ✅ ИСПРАВЛЕНО: тип 'levels' (раньше был 'language')
+          // Тип 'levels' используется для возврата к списку уровней
           if (addHistory) state.history.push({ type: 'levels', data: { language } });
           renderTopics(level, language, addHistory);
         } catch (e) {
@@ -240,7 +208,7 @@ function renderTopics(level, language, addHistory = true) {
         const lessonRes = await fetch(`data/${language.folder}/${topic.file}`);
         const lessonData = await lessonRes.json();
         const fullTopic = lessonData.topics[0];
-        // ✅ ИСПРАВЛЕНО: тип 'topics' (раньше был 'level') + сохраняем level и language
+        // Сохраняем level и language для корректного возврата
         if (addHistory) state.history.push({ type: 'topics', data: { language, level } });
         goTopic(fullTopic);
       } catch (e) {
@@ -299,13 +267,13 @@ function renderPaginatedTheory(topic) {
 
 function renderExercises(topic, container) {
   let correctCount = 0;
-  let finished = false; // ✅ ИСПРАВЛЕНО: защита от дублирования
+  let finished = false; // Защита от дублирования сообщения о завершении
 
   const checkFinish = () => {
     if (!finished && correctCount === topic.exercises.length) {
       finished = true;
       db.markDone(state.currentUser, topic.id);
-      // ✅ ИСПРАВЛЕНО: используем appendChild вместо innerHTML +=
+      // Используем appendChild вместо innerHTML +=
       const msg = document.createElement('p');
       msg.className = 'feedback ok';
       msg.style.marginTop = '20px';
