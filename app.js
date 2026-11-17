@@ -8,6 +8,7 @@ const $title = document.getElementById('title');
 const $backBtn = document.getElementById('backBtn');
 const $navHeader = document.getElementById('nav-header');
 
+// --- АВТОРИЗАЦИЯ (Заглушка) ---
 function handleCredentialResponse(response) {
   const payload = JSON.parse(atob(response.credential.split('.')[1]));
   document.getElementById('user-avatar').src = payload.picture;
@@ -22,6 +23,7 @@ document.getElementById('logoutBtn').onclick = () => {
   document.getElementById('loginBtn').style.display = 'block';
 };
 
+// --- ПРОГРЕСС ---
 const progress = {
   load() { try { return JSON.parse(localStorage.getItem('knowstep_progress') || '{}'); } catch { return {}; } },
   save(p) { localStorage.setItem('knowstep_progress', JSON.stringify(p)); },
@@ -29,6 +31,7 @@ const progress = {
   markDone(topicId) { const p = this.load(); p[topicId] = true; this.save(p); }
 };
 
+// --- ОЗВУЧКА ---
 let voices = [];
 function loadVoices() { voices = window.speechSynthesis.getVoices(); }
 window.speechSynthesis.onvoiceschanged = loadVoices;
@@ -49,6 +52,7 @@ function speakText(text) {
   utterance.lang = 'en-US';
   utterance.rate = 0.9;
 
+  // Ищем мужской голос
   let selectedVoice = voices.find(v => 
     v.name.includes('Google UK English Male') || 
     v.name.includes('Microsoft David') || 
@@ -56,11 +60,8 @@ function speakText(text) {
   );
 
   if (!selectedVoice) {
-    selectedVoice = voices.find(v => 
-      v.lang.startsWith('en') && v.name.includes('Google')
-    );
+    selectedVoice = voices.find(v => v.lang.startsWith('en') && v.name.includes('Google'));
   }
-
   if (!selectedVoice) {
     selectedVoice = voices.find(v => v.lang.startsWith('en'));
   }
@@ -85,6 +86,14 @@ function speakText(text) {
   };
 }
 
+// --- ФУНКЦИЯ НОРМАЛИЗАЦИИ КАВЫЧЕК ---
+function normalizeQuotes(text) {
+  if (!text) return '';
+  // Заменяем все виды апострофов на обычный прямой '
+  return text.replace(/[’‘`´]/g, "'");
+}
+
+// --- УМНАЯ ОБЕРТКА СЛОВ ---
 function makeWordsClickable(htmlString) {
   return htmlString.replace(/(<[^>]+>)|([A-Za-z][A-Za-z']{0,})/g, (match, tag, word) => {
     if (tag) return tag;
@@ -92,6 +101,7 @@ function makeWordsClickable(htmlString) {
   });
 }
 
+// --- НАВИГАЦИЯ ---
 function updateUI(showBack = true) {
   $navHeader.classList.toggle('hidden', !showBack);
 }
@@ -106,6 +116,7 @@ $backBtn.onclick = () => {
   }
 };
 
+// --- ЭКРАНЫ ---
 async function goHome(addHistory = true) {
   if (addHistory) state.history = [];
   updateUI(false);
@@ -313,8 +324,12 @@ function renderExercises(topic, container) {
       btn.onclick = () => {
         if (input.disabled) return;
         input.disabled = true; btn.disabled = true;
-        const val = input.value.trim().toLowerCase();
-        if (val === String(ex.answer).toLowerCase()) {
+        
+        // ИСПОЛЬЗУЕМ НОРМАЛИЗАЦИЮ КАВЫЧЕК
+        const val = normalizeQuotes(input.value.trim().toLowerCase());
+        const answer = normalizeQuotes(String(ex.answer).toLowerCase());
+        
+        if (val === answer) {
           fb.className = 'feedback ok'; fb.textContent = 'Верно';
           correctCount++;
           checkFinish();
@@ -329,10 +344,12 @@ function renderExercises(topic, container) {
   });
 }
 
+// --- ОБРАБОТЧИК КЛИКА ПО СЛОВАМ ---
 document.addEventListener('click', (e) => {
   if (e.target.classList.contains('clickable-word')) {
     speakText(e.target.textContent);
   }
 });
 
+// Запуск приложения
 goHome();
