@@ -10,6 +10,26 @@ const $googleWidget = document.querySelector('.g_id_signin');
 const $loginBtn = document.getElementById('loginBtn');
 const $userProfile = document.getElementById('user-profile');
 
+function hideGoogleWidget() {
+  const gWidget = document.querySelector('.g_id_signin');
+  if (gWidget) {
+    gWidget.style.setProperty('display', 'none', 'important');
+    gWidget.style.setProperty('visibility', 'hidden', 'important');
+    gWidget.style.setProperty('height', '0', 'important');
+    gWidget.style.setProperty('margin', '0', 'important');
+    gWidget.style.setProperty('padding', '0', 'important');
+  }
+}
+
+function showGoogleWidget() {
+  const gWidget = document.querySelector('.g_id_signin');
+  if (gWidget) {
+    gWidget.style.setProperty('display', 'block', 'important');
+    gWidget.style.setProperty('visibility', 'visible', 'important');
+    gWidget.style.setProperty('height', 'auto', 'important');
+  }
+}
+
 function handleCredentialResponse(response) {
   const payload = JSON.parse(atob(response.credential.split('.')[1]));
   state.currentUser = payload.sub; 
@@ -22,8 +42,7 @@ function handleCredentialResponse(response) {
   document.getElementById('user-avatar').src = payload.picture;
   $userProfile.classList.remove('hidden');
   $loginBtn.style.display = 'none';
-  if ($googleWidget) $googleWidget.style.display = 'none';
-  
+  hideGoogleWidget();
   goHome(false);
 }
 
@@ -35,7 +54,7 @@ function checkAuth() {
     document.getElementById('user-avatar').src = user.picture;
     $userProfile.classList.remove('hidden');
     $loginBtn.style.display = 'none';
-    if ($googleWidget) $googleWidget.style.display = 'none';
+    hideGoogleWidget();
   }
 }
 
@@ -48,7 +67,7 @@ document.getElementById('logoutBtn').onclick = () => {
   state.currentUser = null;
   $userProfile.classList.add('hidden');
   $loginBtn.style.display = 'block';
-  if ($googleWidget) $googleWidget.style.display = 'block';
+  showGoogleWidget();
   goHome(false);
 };
 

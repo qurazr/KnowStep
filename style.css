@@ -352,3 +352,7 @@ input[type="text"]:focus {
   background: #f1f5f9;
   font-weight: 600;
 }
+
+.site-header .g_id_signin {
+  display: none !important;
+}
